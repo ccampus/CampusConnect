@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sid.campusconnect"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.example.sid.campusconnect.sampleapp"
+        android:allowBackup="true"
+        android:icon="@drawable/campuslogo1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.sid.campusconnect.MainActivity"
+            android:label="Campus Connect" />
+        <activity
+            android:name="com.example.sid.campusconnect.checker"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sid.campusconnect.Signup"
+            android:label="Sign UP!"
+            android:parentActivityName="com.example.sid.campusconnect.MainActivity" />
+        <activity
+            android:name="com.example.sid.campusconnect.ForgotPassword"
+            android:label="Forgot Password"
+            android:parentActivityName="com.example.sid.campusconnect.MainActivity" />
+        <activity
+            android:name="com.example.sid.campusconnect.EmailReverify"
+            android:label="Resend Email Confirmation"
+            android:parentActivityName="com.example.sid.campusconnect.MainActivity" />
+        <activity
+            android:name="com.example.sid.campusconnect.Universal"
+            android:label="@string/title_activity_universal" />
+        <activity
+            android:name="com.example.sid.campusconnect.SignUpAdmin"
+            android:parentActivityName="com.example.sid.campusconnect.MainActivity" />
+        <activity
+            android:name="com.example.sid.campusconnect.Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.sid.campusconnect.Profile"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName="com.example.sid.campusconnect.Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.sid.campusconnect.SignUpDetails" />
+        <activity
+            android:name="com.example.sid.campusconnect.Proceed"
+            android:label="@string/title_activity_proceed"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
