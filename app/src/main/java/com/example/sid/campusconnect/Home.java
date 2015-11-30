@@ -163,6 +163,10 @@ public class Home extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
 
         }
+        else if(id==R.id.nav_addquestion)
+        {
+            startActivity(new Intent(Home.this,AddQuestion.class));
+        }
         else if (id == R.id.nav_manage)
         {
             if(user.getBoolean("Is_Admin")==true)

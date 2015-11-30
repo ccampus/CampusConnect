@@ -59,4 +59,5 @@
     <string name="title_activity_proceed">Proceed</string>
     <string name="title_activity_student_verify">Student Verification</string>
     <string name="title_activity_user_profile">User Profile</string>
+    <string name="title_activity_add_question">Add Question</string>
 </resources>
