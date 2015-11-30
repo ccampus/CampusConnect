@@ -20,6 +20,19 @@
             android:title="Verify Students" />
     </group>
 
+    <item android:title="Question">
+        <menu>
+            <item
+                android:id="@+id/nav_addquestion"
+                android:icon="@drawable/ic_account_box_black_24dp"
+                android:title="Add Question" />
+            <item
+                android:id="@+id/nav_Editqs"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Edit Question" />
+        </menu>
+    </item>
+
     <item android:title="You">
         <menu>
             <item

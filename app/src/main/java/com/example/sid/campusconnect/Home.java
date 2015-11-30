@@ -33,7 +33,8 @@ import java.net.URLConnection;
 
 
 public class Home extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener
+{
 
     TextView tv1;
     ImageView imageView;

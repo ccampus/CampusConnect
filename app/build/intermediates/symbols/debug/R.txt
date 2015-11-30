@@ -568,7 +568,7 @@ int id action_menu_presenter 0x7f0d0003
 int id action_mode_bar 0x7f0d0054
 int id action_mode_bar_stub 0x7f0d0053
 int id action_mode_close_button 0x7f0d003c
-int id action_settings 0x7f0d00c5
+int id action_settings 0x7f0d00c7
 int id activity_chooser_view_content 0x7f0d003d
 int id alertTitle 0x7f0d0047
 int id always 0x7f0d002b
@@ -631,12 +631,14 @@ int id middle 0x7f0d002a
 int id mini 0x7f0d0028
 int id multiply 0x7f0d0035
 int id n 0x7f0d0070
+int id nav_Editqs 0x7f0d00c4
+int id nav_addquestion 0x7f0d00c3
 int id nav_camera 0x7f0d00bf
 int id nav_gallery 0x7f0d00c0
 int id nav_imageView 0x7f0d00a8
-int id nav_logout 0x7f0d00c4
+int id nav_logout 0x7f0d00c6
 int id nav_manage 0x7f0d00c2
-int id nav_pro 0x7f0d00c3
+int id nav_pro 0x7f0d00c5
 int id nav_slideshow 0x7f0d00c1
 int id nav_view 0x7f0d006f
 int id never 0x7f0d002e
