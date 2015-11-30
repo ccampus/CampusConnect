@@ -114,12 +114,11 @@ public class Signup extends AppCompatActivity {
                             Toast.makeText(Signup.this, e.getMessage(), Toast.LENGTH_LONG).show();
                             ((EditText) findViewById(R.id.regPassword)).setText("");
                             ((EditText) findViewById(R.id.regAgainPassword)).setText("");
-                        } else {
-                            // Start an intent for the dispatch activity
+                        }
+                        else
+                        {
                             Toast.makeText(Signup.this, "Email for account Confirmation has been sent to " + ParseUser.getCurrentUser().getEmail(), Toast.LENGTH_LONG).show();
-                            /*Intent intent = new Intent(Signup.this,MainActivity.class);
-                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                            startActivity(intent);*/
+
                             ParseUser.getCurrentUser().logOutInBackground();
                             ((EditText) findViewById(R.id.regEmail)).setText("");
                             ((EditText) findViewById(R.id.regPassword)).setText("");

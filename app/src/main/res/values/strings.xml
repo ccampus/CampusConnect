@@ -47,13 +47,16 @@
         <item>Mechanical Engineering</item>
         <item>Rubber n Leather Technology</item>
     </string-array>
-    <string name="dept_prompt">Choose a dept</string>
-    <string name="gender_prompt">Choose gender</string>
+    <string name="dept_prompt">Choose a Department</string>
+    <string name="gender_prompt">Choose Gender</string>
 
     <string-array name="gender_array">
         <item>Male</item>
         <item>Female</item>
         <item>Unspecified</item>
     </string-array>
+
     <string name="title_activity_proceed">Proceed</string>
+    <string name="title_activity_student_verify">Student Verification</string>
+    <string name="title_activity_user_profile">User Profile</string>
 </resources>

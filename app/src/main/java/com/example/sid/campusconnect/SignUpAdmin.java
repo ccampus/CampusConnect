@@ -25,6 +25,7 @@ public class SignUpAdmin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_admin);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         // Set up the signup form.
         email = (EditText) findViewById(R.id.regEmail);
         passwordView = (EditText) findViewById(R.id.regPassword);
@@ -94,9 +95,6 @@ public class SignUpAdmin extends AppCompatActivity {
                         }
 
 
-
-
-
                         // Set up a progress dialog
                         final ProgressDialog dlg = new ProgressDialog(SignUpAdmin.this);
                         dlg.setTitle("Please wait.");
@@ -129,9 +127,7 @@ public class SignUpAdmin extends AppCompatActivity {
                                 {
                                     // Start an intent for the dispatch activity
                                     Toast.makeText(SignUpAdmin.this, "Email for account Confirmation has been sent to " + ParseUser.getCurrentUser().getEmail(), Toast.LENGTH_LONG).show();
-                            /*Intent intent = new Intent(Signup.this,MainActivity.class);
-                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                            startActivity(intent);*/
+
                                     ParseUser.getCurrentUser().logOutInBackground();
                                     ((EditText) findViewById(R.id.regEmail)).setText("");
                                     ((EditText) findViewById(R.id.regPassword)).setText("");

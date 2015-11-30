@@ -35,7 +35,8 @@ import static com.parse.ParseUser.logInInBackground;
 
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
     public  EditText usernameView;
     public EditText passwordView;
     final Context context = this;
@@ -71,9 +72,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-
         usernameView = (EditText) findViewById(R.id.LogName);
         passwordView = (EditText) findViewById(R.id.LogPassword);
 
@@ -82,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.SignUp).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // startActivity(new Intent(MainActivity.this,Signup.class));
 
                 final Dialog dialog = new Dialog(context);
 
@@ -90,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
                 ImageButton istud = (ImageButton) dialog.findViewById(R.id.PStud);
                 ImageButton istaff = (ImageButton) dialog.findViewById(R.id.PStaff);
-                //dialog.setTitle("Sign UP!");
+
                 dialog.show();
 
                 istud.setOnClickListener(new View.OnClickListener() {
@@ -139,7 +136,6 @@ public class MainActivity extends AppCompatActivity {
 
                 // empty password field
 
-
                 if (isEmpty(passwordView)) {
                     if (validationError) {
                         validationErrorMessage.append(getResources().getString(R.string.error_join));
@@ -155,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
                             .show();
                     return;
                 }
+
                 //  progress dialog
                 final ProgressDialog dlg = new ProgressDialog(MainActivity.this);
                 dlg.setTitle("Please wait.");
@@ -170,12 +167,15 @@ public class MainActivity extends AppCompatActivity {
 
                             username1=usernameView.getText().toString();
                             password=passwordView.getText().toString();
-                            //trial = passwordView.
                             dlg.dismiss();
-                            if (e != null) {
+
+                            if (e != null)
+                            {
                                 // Show the error message
                                 Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
-                            } else {
+                            }
+                            else
+                            {
                                 // Start an intent for the dispatch activity
                                 emailVerified = user.getBoolean("emailVerified");
                                 studVerified  =user.getBoolean("Is_Verified");

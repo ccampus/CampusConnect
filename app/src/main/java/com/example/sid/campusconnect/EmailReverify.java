@@ -2,48 +2,29 @@ package com.example.sid.campusconnect;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.provider.ContactsContract;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Toast;
 
-import com.parse.FindCallback;
-import com.parse.GetCallback;
-import com.parse.Parse;
 import com.parse.ParseException;
-import com.parse.ParseObject;
-import com.parse.ParseQuery;
 import com.parse.ParseUser;
-import com.parse.SignUpCallback;
-import com.parse.ParseSession;
-
-import java.net.PasswordAuthentication;
-import java.util.List;
-
-import javax.security.auth.callback.Callback;
-
-import bolts.Task;
 
 public class EmailReverify extends MainActivity {
     private String email;
     private String username;
     private String passkey,object_id,usid;
 
-    //MainActivity globalvar = new MainActivity();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email_reverify);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         username=ParseUser.getCurrentUser().getUsername();
         email=ParseUser.getCurrentUser().getEmail();
         object_id=ParseUser.getCurrentUser().getObjectId();
-        //passkey=globalvar.getPass();//NULL VALUE militye.
         passkey = MainActivity.password;
 
         findViewById(R.id.btn_Resend).setOnClickListener(new View.OnClickListener() {
@@ -52,21 +33,28 @@ public class EmailReverify extends MainActivity {
 
             ParseUser user= ParseUser.getCurrentUser();
             user.setEmail("");
-                try {
+                try
+                {
                     user.save();
-                } catch (ParseException e) {
+                }
+                catch (ParseException e)
+                {
                     e.printStackTrace();
                 }
+
 				final ProgressDialog dlg = new ProgressDialog(EmailReverify.this);
                 dlg.setTitle("Please wait.");
                 dlg.setMessage("Sending email.  Please wait.");
                 dlg.show();
 
                 user.setEmail(email);
-                try {
+                try
+                {
                     user.save();
                     Toast.makeText(EmailReverify.this, "Email for account verification has been sent to "+email, Toast.LENGTH_LONG).show();
-                } catch (ParseException e) {
+                }
+                catch (ParseException e)
+                {
                     e.printStackTrace();
                 }
 				logout();
@@ -75,18 +63,6 @@ public class EmailReverify extends MainActivity {
 
 
         });
-
-       /* ParseQuery<ParseObject> query = ParseQuery.getQuery("GameScore");
-        query.whereEqualTo("playerName", "Dan Stemkoski");
-        query.findInBackground(new FindCallback<ParseObject>() {
-            public void done(List<ParseObject> scoreList, ParseException e) {
-                if (e == null) {
-                    Log.d("score", "Retrieved " + scoreList.size() + " scores");
-                } else {
-                    Log.d("score", "Error: " + e.getMessage());
-                }
-            }
-        });*/
 
 
     }
@@ -129,18 +105,14 @@ public class EmailReverify extends MainActivity {
     public void logout()
     {
         ParseUser.getCurrentUser().logOut();
-       // Intent intent = new Intent(EmailReverify.this,checker.class);
-       // intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
 
-        //startActivity(intent);
     }
 
     public void logout1()
     {
         ParseUser.getCurrentUser().logOut();
-        Intent intent = new Intent(EmailReverify.this,checker.class);
+        Intent intent = new Intent(EmailReverify.this,SessionChecker.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
     }
-
 
 }

@@ -49,7 +49,6 @@ public class ForgotPassword extends AppCompatActivity {
             public void onClick(View v) {
 
                 String username;
-               // Done on 10 Sept 2015 @ 19:45
                 EditText abc = (EditText) findViewById(R.id.user_name);
                 username =abc.getText().toString();
 
@@ -72,10 +71,6 @@ public class ForgotPassword extends AppCompatActivity {
         });
 
     }
-
-
-
-
 
             public boolean onCreateOptionsMenu(Menu menu) {
                 // Inflate the menu; this adds items to the action bar if it is present.

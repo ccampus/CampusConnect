@@ -2,11 +2,8 @@ package com.example.sid.campusconnect;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 
 import com.parse.ParseUser;
 
@@ -24,7 +21,7 @@ public class Proceed extends AppCompatActivity {
         }
         else{
             ParseUser.getCurrentUser().logOutInBackground();
-            startActivity(new Intent(Proceed.this, checker.class));
+            startActivity(new Intent(Proceed.this, SessionChecker.class));
         }
     }
 

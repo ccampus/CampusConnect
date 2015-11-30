@@ -45,6 +45,7 @@ public class Profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -63,20 +64,18 @@ public class Profile extends AppCompatActivity {
         imageView = (ImageView) findViewById(R.id.imgview);
         ParseFile imageFile = (ParseFile) user.get("Profile_pic");
 
-        try {
-            img_url = imageFile.getUrl();
-            GetXMLTask task = new GetXMLTask();
-            task.execute(new String[] { img_url });
-
-        }
-        catch (Exception e)
+        try
         {
-            Toast.makeText(Profile.this,"No dp",Toast.LENGTH_LONG).show();
+            img_url = imageFile.getUrl();
+            byte[] bitmapdata = imageFile.getData();
+            Bitmap bitmap = BitmapFactory.decodeByteArray(bitmapdata , 0, bitmapdata.length);
+            imageView.setImageBitmap(bitmap);
         }
-
-
-
-
+        catch (Exception e1)
+        {
+            img_url="";
+            Toast.makeText(Profile.this, "No Dp for this Student", Toast.LENGTH_LONG);
+        }
         findViewById(R.id.pro_btn_dp).setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View arg0) {
@@ -106,9 +105,12 @@ public class Profile extends AppCompatActivity {
 
             Bitmap bitmap=null;
 
-            try {
+            try
+            {
                 bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImage);
-            } catch (IOException e) {
+            }
+            catch (IOException e)
+            {
                 e.printStackTrace();
             }
 
@@ -139,60 +141,5 @@ public class Profile extends AppCompatActivity {
         }
     }
 
-    private class GetXMLTask extends AsyncTask<String, Void, Bitmap> {
-        @Override
-        protected Bitmap doInBackground(String... urls) {
-            Bitmap map = null;
-            for (String url : urls) {
-                map = downloadImage(url);
-            }
-            return map;
-        }
-
-        // Sets the Bitmap returned by doInBackground
-        @Override
-        protected void onPostExecute(Bitmap result) {
-            imageView.setImageBitmap(result);
-        }
-
-        // Creates Bitmap from InputStream and returns it
-        private Bitmap downloadImage(String url) {
-            Bitmap bitmap = null;
-            InputStream stream = null;
-            BitmapFactory.Options bmOptions = new BitmapFactory.Options();
-            bmOptions.inSampleSize = 1;
-
-            try {
-                stream = getHttpConnection(url);
-                bitmap = BitmapFactory.
-                        decodeStream(stream, null, bmOptions);
-                stream.close();
-            } catch (IOException e1) {
-                // Toast.makeText(Home.this,"Error Bitmap",Toast.LENGTH_LONG).show();
-            }
-            return bitmap;
-        }
-
-        // Makes HttpURLConnection and returns InputStream
-        private InputStream getHttpConnection(String urlString)
-                throws IOException {
-            InputStream stream = null;
-            URL url = new URL(urlString);
-            URLConnection connection = url.openConnection();
-
-            try {
-                HttpURLConnection httpConnection = (HttpURLConnection) connection;
-                httpConnection.setRequestMethod("GET");
-                httpConnection.connect();
-
-                if (httpConnection.getResponseCode() == HttpURLConnection.HTTP_OK) {
-                    stream = httpConnection.getInputStream();
-                }
-            } catch (Exception ex) {
-                Toast.makeText(Profile.this,"Error URL",Toast.LENGTH_LONG).show();
-            }
-            return stream;
-        }
-    }
 }
 

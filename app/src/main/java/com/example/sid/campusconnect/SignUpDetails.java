@@ -54,7 +54,6 @@ public class SignUpDetails extends AppCompatActivity {
         Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
 
         new Handler().postDelayed(new Runnable() {
-
             @Override
             public void run() {
                 doubleBackToExitPressedOnce = false;
@@ -72,9 +71,6 @@ public class SignUpDetails extends AppCompatActivity {
         lname=(EditText) findViewById(R.id.edt_Lname);
         sdept=(Spinner) findViewById(R.id.spinner_dept);
         sgender=(Spinner) findViewById(R.id.spinner_gender);
-
-
-
 
 
         findViewById(R.id.sign_btn_dob).setOnClickListener(new View.OnClickListener() {
@@ -105,9 +101,16 @@ public class SignUpDetails extends AppCompatActivity {
 
                 String st=fname.getText().toString()+" "+lname.getText().toString();
 
-
                 dept = String.valueOf(sdept.getSelectedItem());
                 gender = String.valueOf(sgender.getSelectedItem());
+
+
+                if(st.equals("")||dob==null)
+                {
+                    Toast.makeText(SignUpDetails.this,"Please Fill complete details",Toast.LENGTH_LONG).show();
+                }
+
+
 
 
 

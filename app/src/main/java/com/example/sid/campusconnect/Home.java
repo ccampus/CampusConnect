@@ -3,13 +3,11 @@ package com.example.sid.campusconnect;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -23,19 +21,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.parse.Parse;
 import com.parse.ParseFile;
 import com.parse.ParseUser;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
@@ -84,13 +76,14 @@ public class Home extends AppCompatActivity
 
         try {
             img_url = imageFile.getUrl();
-            GetXMLTask task = new GetXMLTask();
-            task.execute(new String[] { img_url });
-
-        }
-        catch (Exception e)
+            byte[] bitmapdata = imageFile.getData();
+            Bitmap bitmap = BitmapFactory.decodeByteArray(bitmapdata , 0, bitmapdata.length);
+            imageView.setImageBitmap(bitmap);
+            }
+        catch (Exception e1)
             {
-            Toast.makeText(Home.this,"No dp",Toast.LENGTH_LONG).show();
+            img_url="";
+            Toast.makeText(Home.this, "Please set you DP", Toast.LENGTH_LONG).show();
             }
 
             NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -168,14 +161,25 @@ public class Home extends AppCompatActivity
 
         } else if (id == R.id.nav_slideshow) {
 
-        } else if (id == R.id.nav_manage) {
+        }
+        else if (id == R.id.nav_manage)
+        {
+            if(user.getBoolean("Is_Admin")==true)
+            {
+                startActivity(new Intent(Home.this,StudentVerify.class));
+            }
+            else
+            {
+                Toast.makeText(Home.this,"Only Staff has this right",Toast.LENGTH_LONG).show();
+            }
 
-        } else if (id == R.id.nav_pro) {
+        } else if (id == R.id.nav_pro)
+        {
             startActivity(new Intent(Home.this,Profile.class));
 
         } else if (id == R.id.nav_logout) {
             ParseUser.getCurrentUser().logOut();
-            Intent intent = new Intent(Home.this,checker.class);
+            Intent intent = new Intent(Home.this,SessionChecker.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }
@@ -188,61 +192,6 @@ public class Home extends AppCompatActivity
 
    //////////////////////////////////////////////////////////////////////////////////////////////
 
-    private class GetXMLTask extends AsyncTask<String, Void, Bitmap> {
-        @Override
-        protected Bitmap doInBackground(String... urls) {
-            Bitmap map = null;
-            for (String url : urls) {
-                map = downloadImage(url);
-            }
-            return map;
-        }
-
-        // Sets the Bitmap returned by doInBackground
-        @Override
-        protected void onPostExecute(Bitmap result) {
-            imageView.setImageBitmap(result);
-        }
-
-        // Creates Bitmap from InputStream and returns it
-        private Bitmap downloadImage(String url) {
-            Bitmap bitmap = null;
-            InputStream stream = null;
-            BitmapFactory.Options bmOptions = new BitmapFactory.Options();
-            bmOptions.inSampleSize = 1;
-
-            try {
-                stream = getHttpConnection(url);
-                bitmap = BitmapFactory.
-                        decodeStream(stream, null, bmOptions);
-                stream.close();
-            } catch (IOException e1) {
-               // Toast.makeText(Home.this,"Error Bitmap",Toast.LENGTH_LONG).show();
-            }
-            return bitmap;
-        }
-
-        // Makes HttpURLConnection and returns InputStream
-        private InputStream getHttpConnection(String urlString)
-                throws IOException {
-            InputStream stream = null;
-            URL url = new URL(urlString);
-            URLConnection connection = url.openConnection();
-
-            try {
-                HttpURLConnection httpConnection = (HttpURLConnection) connection;
-                httpConnection.setRequestMethod("GET");
-                httpConnection.connect();
-
-                if (httpConnection.getResponseCode() == HttpURLConnection.HTTP_OK) {
-                    stream = httpConnection.getInputStream();
-                }
-            } catch (Exception ex) {
-                Toast.makeText(Home.this,"Error URL",Toast.LENGTH_LONG).show();
-            }
-            return stream;
-        }
-    }
 }
 
 
