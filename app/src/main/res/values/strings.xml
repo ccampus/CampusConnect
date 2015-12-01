@@ -31,7 +31,6 @@
     <string name="title_developers">Developers, \n Campus Connect Team</string>
     <string name="title_activity_sign_up_admin">SignUpAdmin</string>
     <string name="title_activity_home_nav_bar">HomeNavBar</string>
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_activity_home">Home</string>
@@ -45,15 +44,59 @@
         <item>Information Technology</item>
         <item>Instrumentation Engineering</item>
         <item>Mechanical Engineering</item>
-        <item>Rubber n Leather Technology</item>
+        <item>Rubber N Leather Technology</item>
     </string-array>
+
     <string name="dept_prompt">Choose a Department</string>
     <string name="gender_prompt">Choose Gender</string>
+    <string name="category_prompt">Choose Category</string>
 
     <string-array name="gender_array">
         <item>Male</item>
         <item>Female</item>
         <item>Unspecified</item>
+    </string-array>
+
+    <string-array name="Categories_array">
+        <item>Technology</item>
+        <item>Sports</item>
+        <item>General</item>
+        <item>News</item>
+        <item>Books</item>
+        <item>Politics</item>
+        <item>Fests</item>
+        <item>Exams</item>
+        <item>Exam cells</item>
+        <item>Teacher/Professors</item>
+        <item>Chemistry</item>
+        <item>Physics</item>
+        <item>Mathematics</item>
+        <item>Students</item>
+        <item>Industrial Visit</item>
+        <item>Exam Forms</item>
+        <item>Placements</item>
+        <item>Attendance</item>
+        <item>Teaching</item>
+        <item>College Issues</item>
+        <item>Department Issues</item>
+        <item>Detention</item>
+        <item>Canteen</item>
+        <item>Staff</item>
+        <item>Food</item>
+        <item>ATKT</item>
+        <item>HOD</item>
+        <item>Programming</item>
+        <item>Office</item>
+        <item>Others</item>
+        <item>Civil Engineering</item>
+        <item>Computer Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Electronics Engineering</item>
+        <item>Information Technology</item>
+        <item>Instrumentation Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Rubber N Leather Technology</item>
+        <item>Others</item>
     </string-array>
 
     <string name="title_activity_proceed">Proceed</string>

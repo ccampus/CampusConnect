@@ -39,6 +39,7 @@ public class SignUpDetails extends AppCompatActivity {
     Spinner sdept,sgender;
     Bitmap imv1,imv2,imv3;
     private boolean doubleBackToExitPressedOnce = false ;
+
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
@@ -109,10 +110,6 @@ public class SignUpDetails extends AppCompatActivity {
                 {
                     Toast.makeText(SignUpDetails.this,"Please Fill complete details",Toast.LENGTH_LONG).show();
                 }
-
-
-
-
 
 
                if(gender.equals("Male"))

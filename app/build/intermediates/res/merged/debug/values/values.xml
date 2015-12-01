@@ -2,6 +2,50 @@
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <!-- From: file:/E:/CampusConnect/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string-array name="Categories_array">
+        <item>Sports</item>
+        <item>General</item>
+        <item>Others</item>
+        <item>News</item>
+        <item>Books</item>
+        <item>Politics</item>
+        <item>Fests</item>
+        <item>Exams</item>
+        <item>Exam cells</item>
+        <item>Teacher/Professors</item>
+        <item>Confession</item>
+        <item>Chemistry</item>
+        <item>Physics</item>
+        <item>Mathematics</item>
+        <item>Students</item>
+        <item>Industrial Visit</item>
+        <item>Exam Forms</item>
+        <item>Placements</item>
+        <item>Attendance</item>
+        <item>Teaching</item>
+        <item>College Issues</item>
+        <item>Department Issues</item>
+        <item>Detention</item>
+        <item>Canteen</item>
+        <item>Staff</item>
+        <item>Food</item>
+        <item>ATKT</item>
+        <item>HOD</item>
+        <item>Programming</item>
+        <item>Girls</item>
+        <item>Relationship</item>
+        <item>Office</item>
+        <item>Technology</item>
+        <item>Civil Engineering</item>
+        <item>Computer Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Electronics Engineering</item>
+        <item>Information Technology</item>
+        <item>Instrumentation Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Rubber N Leather Technology</item>
+        <item>Others</item>
+    </string-array>
     <string-array name="dept_array">
         <item>Civil Engineering</item>
         <item>Computer Engineering</item>
@@ -10,7 +54,7 @@
         <item>Information Technology</item>
         <item>Instrumentation Engineering</item>
         <item>Mechanical Engineering</item>
-        <item>Rubber n Leather Technology</item>
+        <item>Rubber N Leather Technology</item>
     </string-array>
     <string-array name="gender_array">
         <item>Male</item>
@@ -368,6 +412,7 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <!-- From: file:/E:/CampusConnect/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="category_prompt">Choose Category</string>
     <string name="dept_prompt">Choose a Department</string>
     <string name="error_blank_email">Enter your Email Address</string>
     <string name="error_blank_password">enter a password</string>
