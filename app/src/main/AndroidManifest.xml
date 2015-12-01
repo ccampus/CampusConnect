@@ -64,6 +64,10 @@
             android:name=".AddQuestion"
             android:label="@string/title_activity_add_question" >
         </activity>
+        <activity
+            android:name=".ViewQuestion"
+            android:label="@string/title_activity_view_question" >
+        </activity>
     </application>
 
 </manifest>

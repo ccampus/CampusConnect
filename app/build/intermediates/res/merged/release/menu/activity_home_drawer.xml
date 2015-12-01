@@ -17,8 +17,25 @@
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Verify Students" />
     </group>
+
+    <item android:title="Question">
+        <menu>
+            <item
+                android:id="@+id/nav_Viewqs"
+                android:icon="@drawable/ic_menu_send"
+                android:title="View Questions" />
+            <item
+                android:id="@+id/nav_addquestion"
+                android:icon="@drawable/ic_account_box_black_24dp"
+                android:title="Add Question" />
+            <item
+                android:id="@+id/nav_Editqs"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Edit Question" />
+        </menu>
+    </item>
 
     <item android:title="You">
         <menu>
@@ -34,4 +51,4 @@
     </item>
 
 </menu>
-<!-- From: file:/D:/CampusConnect/app/src/main/res/menu/activity_home_drawer.xml -->
+<!-- From: file:/E:/CampusConnect/app/src/main/res/menu/activity_home_drawer.xml -->

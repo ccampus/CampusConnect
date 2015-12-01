@@ -103,4 +103,5 @@
     <string name="title_activity_student_verify">Student Verification</string>
     <string name="title_activity_user_profile">User Profile</string>
     <string name="title_activity_add_question">Add Question</string>
+    <string name="title_activity_view_question">Questions</string>
 </resources>

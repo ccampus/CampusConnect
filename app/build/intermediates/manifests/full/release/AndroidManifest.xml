@@ -42,9 +42,6 @@
             android:label="Resend Email Confirmation"
             android:parentActivityName="com.example.sid.campusconnect.MainActivity" />
         <activity
-            android:name="com.example.sid.campusconnect.Universal"
-            android:label="@string/title_activity_universal" />
-        <activity
             android:name="com.example.sid.campusconnect.SignUpAdmin"
             android:parentActivityName="com.example.sid.campusconnect.MainActivity" />
         <activity
@@ -68,6 +65,10 @@
         <activity
             android:name="com.example.sid.campusconnect.UserProfile"
             android:label="@string/title_activity_user_profile" >
+        </activity>
+        <activity
+            android:name="com.example.sid.campusconnect.AddQuestion"
+            android:label="@string/title_activity_add_question" >
         </activity>
     </application>
 
