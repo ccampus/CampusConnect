@@ -3,9 +3,9 @@
     <!-- From: file:/E:/CampusConnect/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="Categories_array">
+        <item>Technology</item>
         <item>Sports</item>
         <item>General</item>
-        <item>Others</item>
         <item>News</item>
         <item>Books</item>
         <item>Politics</item>
@@ -13,7 +13,6 @@
         <item>Exams</item>
         <item>Exam cells</item>
         <item>Teacher/Professors</item>
-        <item>Confession</item>
         <item>Chemistry</item>
         <item>Physics</item>
         <item>Mathematics</item>
@@ -32,10 +31,8 @@
         <item>ATKT</item>
         <item>HOD</item>
         <item>Programming</item>
-        <item>Girls</item>
-        <item>Relationship</item>
         <item>Office</item>
-        <item>Technology</item>
+        <item>Others</item>
         <item>Civil Engineering</item>
         <item>Computer Engineering</item>
         <item>Electrical Engineering</item>

@@ -60,12 +60,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Upload Image Related to Question"
+        android:layout_marginTop="5dp"
+        android:id="@+id/Data"
+        android:textColor="#33CC33"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="( Optional )"
+        android:id="@+id/smalltext"
+        android:textColor="#000"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here to upload"
+        android:layout_marginTop="5dp"
+        android:id="@+id/DataImage"
+        android:layout_marginBottom="5dp"
+        android:textAllCaps="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Category"
         android:layout_marginTop="5dp"
         android:id="@+id/Category"
         android:textColor="#33CC33"
         android:layout_marginBottom="5dp"
         />
+
     <Spinner
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -81,13 +111,28 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add"
+        android:text="Add Question"
         android:layout_marginTop="5dp"
         android:id="@+id/Add"
         android:layout_marginBottom="5dp"
         android:textAllCaps="true"
-        android:layout_gravity="center_horizontal"
         />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="*Currently we only support uploading Images*"
+            android:id="@+id/cautiontext"
+            android:textColor="#000"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
 </LinearLayout>
 <!-- From: file:/E:/CampusConnect/app/src/main/res/layout/activity_add_question.xml -->

@@ -1414,9 +1414,9 @@
         <item>Mechanical Engineering</item>
         <item>Rubber N Leather Technology</item>
     </string-array><string name="error_end">.</string><string name="title_activity_universal">Universal</string><string name="title_developers">Developers, \n Campus Connect Team</string><string name="title_activity_signup">Signup</string><string name="navigation_drawer_open">Open navigation drawer</string><string name="hello_world">Hello world!</string><string name="title_activity_user_profile">User Profile</string><string name="error_blank_password">enter a password</string><string name="action_settings">Settings</string><string name="error_join">", and "</string><string name="app_name">CampusConnect</string><string name="title_activity_forgot_password">Forgot Password</string><string name="title_activity_sign_up_admin">SignUpAdmin</string><string name="action_forgot_password">Recover lost password</string><string name="error_invalid_email">This email address is invalid</string><string name="prompt_username">Username</string><string name="gender_prompt">Choose Gender</string><string name="title_activity_add_question">Add Question</string><string name="prompt_password_again">Password Again</string><string-array name="Categories_array">
+        <item>Technology</item>
         <item>Sports</item>
         <item>General</item>
-        <item>Others</item>
         <item>News</item>
         <item>Books</item>
         <item>Politics</item>
@@ -1424,7 +1424,6 @@
         <item>Exams</item>
         <item>Exam cells</item>
         <item>Teacher/Professors</item>
-        <item>Confession</item>
         <item>Chemistry</item>
         <item>Physics</item>
         <item>Mathematics</item>
@@ -1443,10 +1442,8 @@
         <item>ATKT</item>
         <item>HOD</item>
         <item>Programming</item>
-        <item>Girls</item>
-        <item>Relationship</item>
         <item>Office</item>
-        <item>Technology</item>
+        <item>Others</item>
         <item>Civil Engineering</item>
         <item>Computer Engineering</item>
         <item>Electrical Engineering</item>
