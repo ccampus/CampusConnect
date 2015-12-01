@@ -70,6 +70,10 @@
             android:name="com.example.sid.campusconnect.AddQuestion"
             android:label="@string/title_activity_add_question" >
         </activity>
+        <activity
+            android:name="com.example.sid.campusconnect.ViewQuestion"
+            android:label="@string/title_activity_view_question" >
+        </activity>
     </application>
 
 </manifest>

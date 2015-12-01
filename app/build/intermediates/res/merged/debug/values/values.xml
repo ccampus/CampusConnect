@@ -449,6 +449,7 @@
     <string name="title_activity_student_verify">Student Verification</string>
     <string name="title_activity_universal">Universal</string>
     <string name="title_activity_user_profile">User Profile</string>
+    <string name="title_activity_view_question">Questions</string>
     <string name="title_developers">Developers, \n Campus Connect Team</string>
     <string name="title_resend">Your Account is not verified. Our app functions only for verified accounts. Please complete the process. </string>
     <!-- From: file:/E:/CampusConnect/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
