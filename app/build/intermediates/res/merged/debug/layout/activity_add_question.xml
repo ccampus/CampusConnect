@@ -76,15 +76,38 @@
         android:id="@+id/smalltext"
         android:textColor="#000"
         />
-    <Button
+
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click here to upload"
-        android:layout_marginTop="5dp"
-        android:id="@+id/DataImage"
-        android:layout_marginBottom="5dp"
-        android:textAllCaps="true"
-        />
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click here to upload"
+            android:layout_marginTop="5dp"
+            android:id="@+id/DataImage"
+            android:layout_marginBottom="5dp"
+            android:textAllCaps="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dataresult"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="13dp"
+            android:text="No Data Uploaded!"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+          />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -105,6 +128,7 @@
         android:prompt="@string/category_prompt"
         android:paddingBottom="5dp"
         android:paddingTop="5dp"
+        android:id="@+id/category"
         >
     </Spinner>
 

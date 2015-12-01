@@ -28,6 +28,7 @@ import java.io.ByteArrayOutputStream;
 import java.util.Date;
 
 public class SignUpDetails extends AppCompatActivity {
+
     final Context context = this;
     CalendarView calendar;
     Date dob=null;
