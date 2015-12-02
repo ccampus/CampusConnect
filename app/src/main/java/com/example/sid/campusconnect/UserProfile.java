@@ -6,7 +6,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -22,11 +21,7 @@ import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLConnection;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 // THIS CLASS/ACTIVITY IS USED TO DISPLAY PROFILE OF THE USER .
@@ -44,6 +39,7 @@ public class UserProfile extends AppCompatActivity {
     protected TextView dateofb;
     protected TextView lastactivedate;
     protected TextView userpoints;
+    protected TextView ratingTv;
     protected RatingBar rat;  // seriously its a RAT
     protected ImageView imageView;
     protected String img_url;
@@ -56,11 +52,15 @@ public class UserProfile extends AppCompatActivity {
     final String adept ="Adept";
     final String expert="Expert";
     final String master="Master";
+    java.sql.Date dob = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        final SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
 
         // getting all the textviews (TRUST ME ...PAIN IN the ASS)
 
@@ -74,9 +74,9 @@ public class UserProfile extends AppCompatActivity {
         userpoints=(TextView)findViewById(R.id.textView18);
         rat=(RatingBar) findViewById(R.id.ratingBar);
         imageView = (ImageView) findViewById(R.id.ProfilePic);
+        ratingTv = (TextView)findViewById(R.id.textView20);
 
         //Receiving user_id through intent
-
         Intent intent = getIntent();
         String user_id = intent.getStringExtra("user_id");
 
@@ -126,14 +126,15 @@ public class UserProfile extends AppCompatActivity {
                     deptment.setText(dept);
 
                     // date of birth of user
-                    Date dateofbirth = object.getDate("Dob");
-                    String d = dateofbirth.toString();
-                    dateofb.setText(d);
+
+                    Date db=object.getDate("Dob");
+                    dateofb.setText(dateFormat.format(db).toString());
 
                     // last seen/activity of user
                     Date lastactive=object.getUpdatedAt();
+                    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd hh:mm");
                     String l=lastactive.toString();
-                    lastactivedate.setText(l);
+                    lastactivedate.setText(formatter.format(lastactive).toString());
 
                     //points of user
                     String points = String.valueOf(object.getInt("Points"));
@@ -154,6 +155,7 @@ public class UserProfile extends AppCompatActivity {
                     if(rating.equals(no))
                     {
                         String user_rating=novice;
+                        ratingTv.setText(novice);
                         rat.setRating(1);
                         rat.setClickable(false);
                         rat.setFocusable(false);
@@ -161,6 +163,7 @@ public class UserProfile extends AppCompatActivity {
                     else if (rating.equals(ap))
                     {
                         String user_rating=apprentice;
+                        ratingTv.setText(apprentice);
                         rat.setRating(2);
                         rat.setClickable(false);
                         rat.setFocusable(false);
@@ -170,6 +173,7 @@ public class UserProfile extends AppCompatActivity {
                     else if(rating.equals(ad))
                     {
                         String user_rating=adept;
+                        ratingTv.setText(adept);
                         rat.setRating(3);
                         rat.setClickable(false);
                         rat.setFocusable(false);
@@ -178,6 +182,7 @@ public class UserProfile extends AppCompatActivity {
                     else if(rating.equals(ex))
                     {
                         String user_rating=expert;
+                        ratingTv.setText(expert);
                         rat.setRating(4);
                         rat.setClickable(false);
                         rat.setFocusable(false);
@@ -186,14 +191,17 @@ public class UserProfile extends AppCompatActivity {
                     else
                     {
                         String user_rating=master;
+                        ratingTv.setText(master);
                         rat.setRating(5);
                         rat.setClickable(false);
                         rat.setFocusable(false);
                     }
 
+
+                    // dp of user
                     ParseFile imageFile = object.getParseFile("Profile_pic");
-                    try
-                    {
+
+                    try {
                         img_url = imageFile.getUrl();
                         byte[] bitmapdata = imageFile.getData();
                         Bitmap bitmap = BitmapFactory.decodeByteArray(bitmapdata , 0, bitmapdata.length);
@@ -204,6 +212,8 @@ public class UserProfile extends AppCompatActivity {
                         img_url="";
                         Toast.makeText(UserProfile.this,"No Dp for this Student",Toast.LENGTH_LONG).show();
                     }
+
+
                     }
                 else
                 {
@@ -213,5 +223,6 @@ public class UserProfile extends AppCompatActivity {
         });
 
     }
+
 
 }

@@ -1,37 +1,29 @@
 package com.example.sid.campusconnect;
 
-import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Spinner;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.parse.ParseException;
 import com.parse.ParseFile;
-import com.parse.ParseUser;
-import com.parse.SignUpCallback;
 import com.parse.ParseUser;
 
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLConnection;
 
 public class Profile extends AppCompatActivity {
 
@@ -40,11 +32,26 @@ public class Profile extends AppCompatActivity {
     private  TextView email,dept,username,name;
     ImageView imageView;
     String img_url;
+    int sizeInBytes = 0;
+    int MAX_BYTES = 12000;
+    boolean allowed = false;
+    Uri selectedImage;
+    byte[] image;
+    ProgressDialog dlg;
+    private RatingBar rat;
+
+    final String novice="Novice";
+    final String apprentice="Apprentice";
+    final String adept ="Adept";
+    final String expert="Expert";
+    final String master="Master";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        dlg = new ProgressDialog(Profile.this);
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -53,9 +60,9 @@ public class Profile extends AppCompatActivity {
         dept =  (TextView) findViewById(R.id.pro_dept);
         username= (TextView) findViewById(R.id.pro_uname);
         name= (TextView) findViewById(R.id.pro_fullname);
+        rat = (RatingBar) findViewById(R.id.ratingBar);
 
-
-        user=ParseUser.getCurrentUser();
+        user= ParseUser.getCurrentUser();
         email.setText(user.getEmail().toString());
         username.setText(user.getUsername().toString());
         dept.setText(user.get("Dept").toString());
@@ -82,12 +89,102 @@ public class Profile extends AppCompatActivity {
 
                Intent i = new Intent(
                        Intent.ACTION_PICK,
-                       android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                       MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                         startActivityForResult(i, RESULT_LOAD_IMAGE);
            }
        });
 
+        findViewById(R.id.pro_btn_done).setOnClickListener(new View.OnClickListener() {
+
+
+            @Override
+            public void onClick(View arg0) {
+
+                if (allowed == true) {
+                    dlg.setTitle("Please wait.");
+                    dlg.setMessage("Logging in.  Please wait.");
+                    dlg.show();
+                    try {
+
+
+                        ImageView imageView = (ImageView) findViewById(R.id.imgview);
+                        ParseFile file = new ParseFile("dp.png", image);
+                        file.saveInBackground();
+
+                        user.put("Profile_pic", file);
+                        user.save();
+                        Toast.makeText(Profile.this, "DP Uploaded", Toast.LENGTH_LONG).show();
+                        imageView.setImageURI(selectedImage);
+                        done();
+                    } catch (Exception e1) {
+                        Toast.makeText(Profile.this, "File size should be less than 1mb: ", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(Profile.this, "Please choose a valid file", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+        });
+
+
+        String no = "n";
+        String ap = "ap";
+        String ad = "ad";
+        String ex = "e";
+        String ma ="m";
+        String rating=user.getString("Rating").toString();
+
+        //SETTING RATING BAR COLOR TO GREEN
+        Drawable progress = rat.getProgressDrawable();
+        DrawableCompat.setTint(progress, Color.rgb(51, 204, 51));
+
+        if(rating.equals(no))
+        {
+            String user_rating=novice;
+            rat.setRating(1);
+            rat.setClickable(false);
+            rat.setFocusable(false);
+        }
+        else if (rating.equals(ap))
+        {
+            String user_rating=apprentice;
+            rat.setRating(2);
+            rat.setClickable(false);
+            rat.setFocusable(false);
+
+
+        }
+        else if(rating.equals(ad))
+        {
+            String user_rating=adept;
+            rat.setRating(3);
+            rat.setClickable(false);
+            rat.setFocusable(false);
+
+        }
+        else if(rating.equals(ex))
+        {
+            String user_rating=expert;
+            rat.setRating(4);
+            rat.setClickable(false);
+            rat.setFocusable(false);
+
+        }
+        else
+        {
+            String user_rating=master;
+            rat.setRating(5);
+            rat.setClickable(false);
+            rat.setFocusable(false);
+        }
+
+
+
     }
+
+
+
+
 
     @Override
     public void onBackPressed(){
@@ -100,45 +197,63 @@ public class Profile extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && null != data) {
-            Uri selectedImage = data.getData();
+            selectedImage = data.getData();
             String[] filePathColumn = {MediaStore.Images.Media.DATA};
 
             Bitmap bitmap=null;
 
+
             try
             {
                 bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImage);
+                sizeInBytes=bitmap.getRowBytes();
             }
             catch (IOException e)
             {
                 e.printStackTrace();
+                Toast.makeText(Profile.this,"Exception!",Toast.LENGTH_SHORT).show();
+                sizeInBytes=800000;
             }
 
 
-            Cursor cursor = getContentResolver().query(selectedImage,
-                    filePathColumn, null, null, null);
+                        Cursor cursor = getContentResolver().query(selectedImage,
+                                filePathColumn, null, null, null);
             cursor.moveToFirst();
 
             int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-            String picturePath = cursor.getString(columnIndex);
+            //String picturePath = cursor.getString(columnIndex);
             cursor.close();
 
 
-            ImageView imageView = (ImageView) findViewById(R.id.imgview);
+            System.out.println(sizeInBytes);
+            if(sizeInBytes<=MAX_BYTES) {
 
-            ByteArrayOutputStream stream = new ByteArrayOutputStream();
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
-            byte[] image = stream.toByteArray();
+                try{
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                image = stream.toByteArray();
+                allowed=true;
+                Toast.makeText(Profile.this, "File Selected. Please Press Submit to Upload the DP " + sizeInBytes, Toast.LENGTH_SHORT).show();
 
-            ParseFile file=new ParseFile("dp.png",image);
-            file.saveInBackground();
+                }
+                catch (Exception e1) {
+                    allowed=false;
+                    Toast.makeText(Profile.this, "File size should be less than 1mb ("+sizeInBytes+")", Toast.LENGTH_SHORT).show();
+                }
+                }
 
-            user.put("Profile_pic", file);
-            user.saveInBackground();
-            Toast.makeText(Profile.this, "File Uploaded", Toast.LENGTH_SHORT).show();
-            imageView.setImageURI(selectedImage);
+            else
+            {
+                allowed=false;
+                Toast.makeText(Profile.this, "File size should be less than 1mb ("+sizeInBytes+")", Toast.LENGTH_SHORT).show();
+            }
 
         }
+    }
+
+    public void done()
+    {
+        dlg.dismiss();
     }
 
 }

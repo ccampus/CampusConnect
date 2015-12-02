@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.sid.campusconnect.SignUpDetails">
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:text="Enter First Name"
         android:layout_height="35dp"
         android:id="@+id/sign_Fname"
@@ -19,47 +19,68 @@
         android:layout_alignStart="@+id/sign_Lname" />
 
     <EditText
-        android:layout_width="120dp"
+        android:layout_width="170dp"
         android:layout_height="35dp"
-        android:id="@+id/edt_Lname"
-        android:layout_alignTop="@+id/sign_Fname"
-        android:layout_toRightOf="@+id/sign_next"
-        android:layout_toEndOf="@+id/sign_next" />
+        android:id="@+id/edt_Fname"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:textSize="13dp"
+        android:layout_above="@+id/sign_Lname"
+        android:layout_toRightOf="@+id/sign_Fname"
+        android:layout_marginLeft="15dp"
+        />
+
 
     <TextView
         android:layout_width="130dp"
         android:text="Enter Last Name"
         android:layout_height="35dp"
         android:id="@+id/sign_Lname"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="25dp"
         android:layout_below="@+id/sign_Fname"
         android:layout_toLeftOf="@+id/sign_next"
         android:layout_toStartOf="@+id/sign_next" />
 
+
     <EditText
-        android:layout_width="120dp"
+        android:layout_width="170dp"
         android:layout_height="35dp"
-        android:id="@+id/edt_Fname"
+        android:id="@+id/edt_Lname"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:textSize="13dp"
         android:layout_above="@+id/sign_dob"
-        android:layout_toRightOf="@+id/sign_next"
-        android:layout_toEndOf="@+id/sign_next" />
+        android:layout_alignRight="@+id/edt_Fname"
+        android:layout_alignEnd="@+id/dob" />
+
 
     <TextView
         android:layout_width="130dp"
         android:layout_height="35dp"
         android:text="Choose D.O.B."
         android:id="@+id/sign_dob"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:layout_below="@+id/sign_Lname"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
     <Button
         android:id="@+id/sign_btn_dob"
-        android:layout_width="35dp"
+        android:layout_width="wrap_content"
         android:layout_height="35dp"
+        android:text="Select"
+        android:textSize="10dp"
         android:layout_alignTop="@+id/sign_dob"
-        android:layout_toRightOf="@+id/sign_next"
-        android:layout_toEndOf="@+id/sign_next" />
+        android:layout_alignRight="@+id/edt_Lname"/>
+
+    <TextView
+        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/dob"
+        android:text="DOB"
+        android:layout_alignLeft="@id/edt_Fname"
+        android:layout_alignTop="@+id/sign_dob"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -68,17 +89,18 @@
         android:id="@+id/sign_dept"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/sign_dob"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="25dp" />
+
 
     <Spinner
         android:id="@+id/spinner_dept"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="35dp"
         android:entries="@array/dept_array"
         android:prompt="@string/dept_prompt"
         android:layout_above="@+id/sign_gender"
-        android:layout_toRightOf="@+id/sign_next"
-        android:layout_toEndOf="@+id/sign_next" />
+        android:layout_alignLeft="@+id/edt_Lname"
+        android:layout_alignStart="@+id/edt_Lname" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -88,27 +110,57 @@
         android:layout_below="@+id/sign_dept"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="25dp"/>
 
     <Spinner
         android:id="@+id/spinner_gender"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="35dp"
         android:entries="@array/gender_array"
         android:text="@string/gender_prompt"
-        android:layout_alignLeft="@+id/sign_btn_dob"
         android:layout_alignTop="@+id/sign_gender"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignLeft="@+id/spinner_dept"
+        android:layout_alignStart="@+id/spinner_dept" />
+
+    <TextView android:layout_height="35dp"
+        android:layout_width="130dp"
+        android:text="Select DP"
+        android:layout_alignLeft="@+id/sign_Fname"
+        android:layout_below="@+id/sign_gender"
+        android:layout_marginTop="25dp"
+        android:id="@+id/sign_dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/sign_dp"
+        android:layout_toRightOf="@+id/sign_dp"
+        android:layout_alignLeft="@+id/edt_Fname"
+        android:text="Select"
+        android:textSize="10dp"
+        android:id="@+id/sign_btn_dp"
+    />
+
+    <TextView
+        android:id="@+id/sign_ifdp"
+        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/sign_btn_dp"
+        android:text="No Dp Selected"
+        android:layout_alignTop="@+id/sign_dp"/>
+
+
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
         android:id="@+id/sign_next"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="69dp" />
+        android:layout_below="@+id/sign_dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

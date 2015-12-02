@@ -16,64 +16,70 @@
         android:layout_width="wrap_content"
         android:text="Sarthak Dadhakar"
         android:layout_height="35dp"
-        android:layout_marginTop="50dp"
         android:id="@+id/pro_fullname"
+        android:layout_marginTop="31dp"
         android:layout_below="@+id/imgview"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="35dp"
         android:text="username"
         android:id="@+id/pro_uname"
         android:layout_alignTop="@+id/pro_fullname"
-        android:layout_toRightOf="@+id/pro_fullname"
-        android:layout_marginLeft="150dp"
-         />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="35dp"
         android:text="email@email.com"
         android:id="@+id/pro_email"
         android:layout_below="@+id/pro_uname"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="20dp" />
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="35dp"
         android:text="Department"
         android:id="@+id/pro_dept"
-        android:layout_below="@+id/pro_fullname"
         android:layout_alignTop="@+id/pro_email"
-        android:layout_alignLeft="@+id/pro_uname"
-         />
+        android:layout_alignRight="@+id/pro_uname"
+        android:layout_alignEnd="@+id/pro_uname" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:text="Select Profile Photo"
+        android:text="Profile Picture"
         android:id="@+id/pro_dp"
         android:layout_below="@+id/pro_dept"
         android:layout_centerVertical="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         />
 
     <Button
         android:id="@+id/pro_btn_dp"
-        android:layout_alignLeft="@+id/pro_dept"
-        android:layout_alignBottom="@+id/pro_dp"
+        android:layout_height="35dp"
+        android:layout_width="80dp"
+        android:text="select"
+        android:textSize="12sp"
         android:layout_alignTop="@+id/pro_dp"
-        android:layout_height="20dp"
-        android:layout_width="35dp"
-        android:text=""
-         />
+        android:layout_alignLeft="@+id/pro_dept"
+        android:layout_alignStart="@+id/pro_dept" />
+    <Button
+        android:id="@+id/pro_btn_done"
+        android:layout_height="45dp"
+        android:layout_width="80dp"
+        android:text="Done"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/pro_dp"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:id="@+id/imgview"
@@ -82,5 +88,15 @@
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:isIndicator="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/pro_btn_done"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
