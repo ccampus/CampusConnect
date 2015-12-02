@@ -222,7 +222,7 @@ public class AddQuestion extends AppCompatActivity {
                             });
                         }
                     } else {
-                        Intent intent = new Intent(AddQuestion.this, SessionChecker.class);
+                        Intent intent = new Intent(AddQuestion.this,Home.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                     }
