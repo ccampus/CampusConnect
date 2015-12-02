@@ -2051,9 +2051,9 @@ containing a value of this type.
         public static final int PStud=0x7f0d00c4;
         public static final int ProfilePic=0x7f0d0098;
         public static final int QsCategory=0x7f0d00ce;
-        public static final int QsId=0x7f0d00cf;
+        public static final int QsId=0x7f0d00d0;
         public static final int QsTitle=0x7f0d00cc;
-        public static final int ReadMore=0x7f0d00d0;
+        public static final int ReadMore=0x7f0d00cf;
         public static final int Reset=0x7f0d0079;
         public static final int SignUp=0x7f0d0081;
         public static final int Submit_forgot=0x7f0d0078;

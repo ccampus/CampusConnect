@@ -556,9 +556,9 @@ int id PStaff 0x7f0d00c5
 int id PStud 0x7f0d00c4
 int id ProfilePic 0x7f0d0098
 int id QsCategory 0x7f0d00ce
-int id QsId 0x7f0d00cf
+int id QsId 0x7f0d00d0
 int id QsTitle 0x7f0d00cc
-int id ReadMore 0x7f0d00d0
+int id ReadMore 0x7f0d00cf
 int id Reset 0x7f0d0079
 int id SignUp 0x7f0d0081
 int id Submit_forgot 0x7f0d0078

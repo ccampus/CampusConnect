@@ -31,7 +31,6 @@ public class ViewQuestion extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_question);
 
-
         // loading
         final ProgressDialog QSloader = new ProgressDialog(ViewQuestion.this);
         QSloader.setTitle("Please wait.");
@@ -89,13 +88,14 @@ public class ViewQuestion extends ListActivity {
     public void ReadFullQsHandler(View v)
     {
 
+        View parentView = (View) v.getParent();
+        TextView sd = (TextView)parentView.findViewById(R.id.QsId);
+        final String question_id = sd.getText().toString();
 
-        Toast toast =Toast.makeText(getApplicationContext(),question_id,Toast.LENGTH_LONG);
-        toast.show();
-        //Intent intent = new Intent(ViewQuestion.this,QuestionDetail.class);
+        Intent intent = new Intent(ViewQuestion.this,QuestionDetail.class);
         //NOTE: THE MOST IMP STEP ==> PASSING QuestionID THROUGH INTENT TO NEXT ACTIVITY
-        //intent.putExtra("user_id", question_id);
-        //startActivity(intent);
+        intent.putExtra("question_id", question_id);
+        startActivity(intent);
     }
 
 }

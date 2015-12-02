@@ -133,7 +133,6 @@ public class StudentVerify extends ListActivity {
         String user_id = btnChild.getText().toString();
 
         Intent intent = new Intent(StudentVerify.this,UserProfile.class);
-
         //NOTE: THE MOST IMP STEP ==> PASSING USERID THROUGH INTENT TO NEXT ACTIVITY
         intent.putExtra("user_id", user_id);
         startActivity(intent);
