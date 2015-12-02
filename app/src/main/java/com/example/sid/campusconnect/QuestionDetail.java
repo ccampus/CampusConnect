@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.parse.GetCallback;
 import com.parse.ParseException;
@@ -28,7 +29,7 @@ public class QuestionDetail extends AppCompatActivity
     protected TextView downvote;
     protected TextView adddate;
     protected TextView usertype;
-    String user_id;
+    String s;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,12 +84,11 @@ public class QuestionDetail extends AppCompatActivity
                         ParseObject users = question.getParseUser("User_id");
                         String name = users.getString("Name");
                         username.setText(name);
-
-                        user_id=users.getString("objectId");
+                        s=users.getObjectId();
 
                         //getting title
-                      String qstitle = question.getString("Title");
-                      title.setText(qstitle);
+                        String qstitle = question.getString("Title");
+                        title.setText(qstitle);
 
                         //description
                         String qsdes = question.getString("Description");
@@ -141,10 +141,9 @@ public class QuestionDetail extends AppCompatActivity
 
     public void UserProfileHandler(View v)
     {
-
         Intent intent = new Intent(QuestionDetail.this,UserProfile.class);
         //NOTE: THE MOST IMP STEP ==> PASSING USERID THROUGH INTENT TO NEXT ACTIVITY
-        intent.putExtra("user_id",user_id);
+        intent.putExtra("user_id",s);
         startActivity(intent);
 
     }
