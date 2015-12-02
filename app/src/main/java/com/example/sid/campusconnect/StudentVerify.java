@@ -162,11 +162,11 @@ public class StudentVerify extends ListActivity {
                             public void done(Map<String, String> result, ParseException e) {
                                 if (e == null) {
                                     Toast.makeText(getApplicationContext(), result.get("discard_result"), Toast.LENGTH_LONG).show();
+                                    //remove row/refresh
+                                    AutoRefresh();
                                 }
                             }
                         });
-                        //remove row/refresh
-                        AutoRefresh();
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {

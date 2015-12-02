@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:2:1-77:12
+ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:2:1-81:12
 	package
 		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:3:5-44
 		INJECTED from E:\CampusConnect\app\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:6:5-79
 	android:name
 		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:8:5-75:19
+ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:8:5-79:19
 MERGED from [com.android.support:appcompat-v7:22.2.1] E:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.1] E:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:22.2.1] E:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\AndroidManifest.xml:22:5-20
@@ -99,58 +99,60 @@ ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:41:9-44:59
 		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:44:13-56
 	android:name
 		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:42:13-33
-activity#com.example.sid.campusconnect.Profile
-ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:45:9-49:59
+activity#com.example.sid.campusconnect.Proceed
+ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:45:9-48:59
 	android:label
 		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:47:13-59
-	android:parentActivityName
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:48:13-47
 	android:theme
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:49:13-56
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:48:13-56
 	android:name
 		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:46:13-36
-activity#com.example.sid.campusconnect.SignUpDetails
-ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:50:9-51
-	android:name
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:50:19-48
-activity#com.example.sid.campusconnect.Proceed
-ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:51:9-54:59
-	android:label
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:53:13-59
-	android:theme
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:54:13-56
-	android:name
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:52:13-36
 activity#com.example.sid.campusconnect.StudentVerify
-ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:55:9-58:20
+ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:49:9-52:20
 	android:label
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:57:13-66
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:51:13-66
 	android:name
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:56:13-42
-activity#com.example.sid.campusconnect.UserProfile
-ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:59:9-62:20
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:50:13-42
+activity#com.example.sid.campusconnect.Profile
+ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:53:9-57:49
 	android:label
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:61:13-64
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:55:13-59
+	android:parentActivityName
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:57:13-47
+	android:theme
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:56:13-56
 	android:name
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:60:13-40
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:54:13-36
+activity#com.example.sid.campusconnect.SignUpDetails
+ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:59:9-51
+	android:name
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:59:19-48
 activity#com.example.sid.campusconnect.AddQuestion
-ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:63:9-66:20
+ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:61:9-64:20
 	android:label
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:65:13-64
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:63:13-64
 	android:name
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:64:13-40
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:62:13-40
 activity#com.example.sid.campusconnect.ViewQuestion
-ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:67:9-70:20
+ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:65:9-68:20
 	android:label
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:69:13-65
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:67:13-65
 	android:name
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:68:13-41
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:66:13-41
+activity#com.example.sid.campusconnect.UserProfile
+ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:69:9-74:20
+	android:label
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:71:13-64
+	android:parentActivityName
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:72:13-47
+	android:name
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:70:13-40
 activity#com.example.sid.campusconnect.QuestionDetail
-ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:71:9-74:20
+ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:75:9-78:20
 	android:label
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:73:13-67
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:77:13-67
 	android:name
-		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:72:13-43
+		ADDED from E:\CampusConnect\app\src\main\AndroidManifest.xml:76:13-43
 uses-sdk
 INJECTED from E:\CampusConnect\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.1] E:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:20:5-43

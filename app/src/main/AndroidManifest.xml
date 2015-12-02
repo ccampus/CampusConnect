@@ -51,12 +51,26 @@
             android:label="@string/title_activity_student_verify" >
         </activity>
         <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".Home"/>
+
+        <activity android:name=".SignUpDetails" />
+
+        <activity
             android:name=".AddQuestion"
             android:label="@string/title_activity_add_question" >
         </activity>
         <activity
             android:name=".ViewQuestion"
             android:label="@string/title_activity_view_question" >
+        </activity>
+        <activity
+            android:name=".UserProfile"
+            android:label="@string/title_activity_user_profile"
+            android:parentActivityName=".Home"
+            >
         </activity>
         <activity
             android:name=".QuestionDetail"
