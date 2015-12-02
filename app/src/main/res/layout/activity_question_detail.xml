@@ -201,8 +201,8 @@
         android:text="Small Text"
         android:id="@+id/textView19"
         android:layout_alignTop="@+id/QsUserType"
-        android:layout_centerHorizontal="true"
-        android:layout_alignBottom="@+id/QsUserType" />
+        android:layout_alignLeft="@+id/textView20"
+        android:layout_alignStart="@+id/textView20" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -211,8 +211,8 @@
         android:text="Small Text"
         android:id="@+id/textView20"
         android:layout_alignBottom="@+id/QsAddTime"
-        android:layout_alignLeft="@+id/textView19"
-        android:layout_alignStart="@+id/textView19" />
+        android:layout_alignLeft="@+id/textView21"
+        android:layout_alignStart="@+id/textView21" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -221,8 +221,10 @@
         android:text="Small Text"
         android:id="@+id/textView21"
         android:layout_alignBottom="@+id/QsDownvotes"
-        android:layout_alignLeft="@+id/textView20"
-        android:layout_alignStart="@+id/textView20" />
+        android:layout_toRightOf="@+id/QsDownvotes"
+        android:layout_toEndOf="@+id/QsDownvotes"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
 
     <TextView
         android:layout_width="wrap_content"

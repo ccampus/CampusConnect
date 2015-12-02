@@ -29,6 +29,7 @@ public class QuestionDetail extends AppCompatActivity
     protected TextView adddate;
     protected TextView usertype;
     String user_id;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,6 +83,8 @@ public class QuestionDetail extends AppCompatActivity
                         ParseObject users = question.getParseUser("User_id");
                         String name = users.getString("Name");
                         username.setText(name);
+
+                        user_id=users.getString("objectId");
 
                         //getting title
                       String qstitle = question.getString("Title");
