@@ -1,37 +1,102 @@
 package com.example.sid.campusconnect;
 
+import android.app.ListActivity;
+import android.app.ProgressDialog;
+import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
-public class ViewQuestion extends AppCompatActivity {
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
+
+import java.util.List;
+
+public class ViewQuestion extends ListActivity {
+
+    protected List<ParseObject> mStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_question);
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_view_question, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        // loading
+        final ProgressDialog QSloader = new ProgressDialog(ViewQuestion.this);
+        QSloader.setTitle("Please wait.");
+        QSloader.setMessage("Loading Questions..");
+        QSloader.show();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        ParseUser current_user = ParseUser.getCurrentUser();
+
+        if (current_user != null)
+        {
+
+            ParseQuery<ParseObject> query = ParseQuery.getQuery("Question");
+            query.findInBackground(new FindCallback<ParseObject>()
+            {
+                public void done(List<ParseObject> questionList, ParseException e) {
+                    if (e == null)
+                    {
+                        int length = questionList.size();
+                        if(length==0)
+                        {
+                            Toast toast = Toast.makeText(getApplicationContext(),"No Questions!",Toast.LENGTH_LONG);
+                            toast.show();
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Intent intent = new Intent(ViewQuestion.this, Home.class);
+                                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent);
+                                }
+                            }, 5000);
+                        }
+                        else
+                        {
+                            QSloader.dismiss();
+                            mStatus = questionList;
+                            ViewQuestionListAdapter adapter = new ViewQuestionListAdapter(getListView().getContext(), mStatus);
+                            setListAdapter(adapter);
+                        }
+                    }
+                    else
+                    {
+                        Log.d("Question ", "Error: " + e.getMessage());
+                    }
+                }
+            });
+
+        } else
+        {
+            Intent intent = new Intent(ViewQuestion.this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
         }
-
-        return super.onOptionsItemSelected(item);
     }
+
+    public void ReadFullQsHandler(View v)
+    {
+
+
+        Toast toast =Toast.makeText(getApplicationContext(),question_id,Toast.LENGTH_LONG);
+        toast.show();
+        //Intent intent = new Intent(ViewQuestion.this,QuestionDetail.class);
+        //NOTE: THE MOST IMP STEP ==> PASSING QuestionID THROUGH INTENT TO NEXT ACTIVITY
+        //intent.putExtra("user_id", question_id);
+        //startActivity(intent);
+    }
+
 }
+

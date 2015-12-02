@@ -74,6 +74,10 @@
             android:name="com.example.sid.campusconnect.ViewQuestion"
             android:label="@string/title_activity_view_question" >
         </activity>
+        <activity
+            android:name="com.example.sid.campusconnect.QuestionDetail"
+            android:label="@string/title_activity_question_detail" >
+        </activity>
     </application>
 
 </manifest>
