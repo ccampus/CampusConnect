@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +18,7 @@ import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class QuestionDetail extends AppCompatActivity
@@ -29,7 +31,16 @@ public class QuestionDetail extends AppCompatActivity
     protected TextView downvote;
     protected TextView adddate;
     protected TextView usertype;
+    protected TextView userprofile;
+    protected Button upvotehandler;
+    protected Button downvotehandler;
+    protected Button writeans;
+    protected Button discuss;
+    protected Button askstaff;
+    protected Button reportqs;
+
     String s;
+    java.sql.Date dob = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +55,15 @@ public class QuestionDetail extends AppCompatActivity
         downvote=(TextView)findViewById(R.id.textView21);
         adddate=(TextView)findViewById(R.id.textView20);
         usertype=(TextView)findViewById(R.id.textView19);
+        userprofile=(TextView)findViewById(R.id.textView27);
+        upvotehandler=(Button)findViewById(R.id.Upvote);
+        downvotehandler=(Button)findViewById(R.id.Downvote);
+        writeans=(Button)findViewById(R.id.WriteAns);
+        discuss=(Button)findViewById(R.id.discuss);
+        askstaff=(Button)findViewById(R.id.askstaff);
+        reportqs=(Button)findViewById(R.id.reportqs);
+
+        final SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
 
         //Receiving question_id through intent
         Intent intent = getIntent();
@@ -84,6 +104,7 @@ public class QuestionDetail extends AppCompatActivity
                         ParseObject users = question.getParseUser("User_id");
                         String name = users.getString("Name");
                         username.setText(name);
+
                         s=users.getObjectId();
 
                         //getting title
@@ -119,8 +140,9 @@ public class QuestionDetail extends AppCompatActivity
 
                         //qs added time
                         Date lastactive=question.getUpdatedAt();
+                        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd hh:mm");
                         String l=lastactive.toString();
-                        adddate.setText(l);
+                        adddate.setText(formatter.format(lastactive).toString());
                         qsloader.dismiss();
                     }
                     else

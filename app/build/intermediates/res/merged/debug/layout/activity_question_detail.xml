@@ -241,8 +241,6 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Small Text"
         android:id="@+id/textView23"
-        android:onClick="UserProfileHandler"
-        android:clickable="true"
         android:layout_alignBottom="@+id/QsUserName"
         android:layout_alignLeft="@+id/textView24"
         android:layout_alignStart="@+id/textView24" />
@@ -275,6 +273,21 @@
         android:layout_alignBottom="@+id/QsTitle"
         android:layout_alignLeft="@+id/textView25"
         android:layout_alignStart="@+id/textView25" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="View Profile "
+        android:id="@+id/textView27"
+        android:textColor="#0a0220"
+        android:onClick="UserProfileHandler"
+        android:clickable="true"
+        android:layout_alignTop="@+id/textView23"
+        android:layout_toRightOf="@+id/textView23"
+        android:layout_toEndOf="@+id/textView23"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
 
 </RelativeLayout>
 <!-- From: file:/E:/CampusConnect/app/src/main/res/layout/activity_question_detail.xml -->
