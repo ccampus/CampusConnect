@@ -22,7 +22,6 @@
             android:layout_height="wrap_content"
             android:text="Upvote"
             android:id="@+id/Upvote"
-            android:onClick="UpvoteQsHandler"
             />
 
         <Button
@@ -32,7 +31,6 @@
             android:text="Downvote"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:onClick="DownvoteQsHandler"
             android:id="@+id/Downvote" />
 
         <Button
@@ -42,7 +40,6 @@
             android:text="Write Ans"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:onClick="WriteAnsHandler"
             android:id="@+id/WriteAns" />
 
     </LinearLayout>
@@ -64,7 +61,7 @@
             android:text="Discuss"
             android:layout_marginRight="5dp"
             android:id="@+id/discuss"
-            android:onClick="DiscussQsHandler" />
+            />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -73,7 +70,6 @@
             android:text="Ask Staff"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:onClick="AskStaffHandler"
             android:id="@+id/askstaff"
             android:layout_weight="0.16" />
 
@@ -84,7 +80,6 @@
             android:text="Report Qs"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:onClick="ReportQsHandler"
             android:id="@+id/reportqs" />
 
     </LinearLayout>
