@@ -2,27 +2,6 @@
 <items version="2" >
 
     <item
-        jar="D:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-aebaf7851496e5f71d44c7f172afe25ef12aaf58.jar" />
-    </item>
-    <item
-        jar="D:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\classes-b4e147e0339ce028be8bf029ca4c7fd70ac9d27f.jar" />
-    </item>
-    <item
-        jar="C:\Users\Sid\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.3.0\bc535105332645408ef5f1380215cc954b842178\bolts-applinks-1.3.0.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="bc535105332645408ef5f1380215cc954b842178">
-        <dex dex="E:\CampusConnect\app\build\intermediates\pre-dexed\release\bolts-applinks-1.3.0-313b93b1bcd68bd8da80f449d14a4a3efd5ef267.jar" />
-    </item>
-    <item
         jar="D:\CampusConnect\app\libs\Parse-1.10.1.jar"
         jumboMode="false"
         revision="23.0.0"
@@ -30,18 +9,32 @@
         <dex dex="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\Parse-1.10.1-db2c89a30d71b41e4966f89685dcc6ff5c7d0da6.jar" />
     </item>
     <item
-        jar="D:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jar="C:\Users\Sid\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.3.0\bc535105332645408ef5f1380215cc954b842178\bolts-applinks-1.3.0.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\classes-c196f0bd61b718e5f3d746d14ddb95c38b2bbb9c.jar" />
+        sha1="bc535105332645408ef5f1380215cc954b842178">
+        <dex dex="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\bolts-applinks-1.3.0-313b93b1bcd68bd8da80f449d14a4a3efd5ef267.jar" />
     </item>
     <item
-        jar="E:\CampusConnect\app\libs\Parse-1.10.1.jar"
+        jar="D:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="181b435832725bec96c11ff568bdfbccdacab944">
-        <dex dex="E:\CampusConnect\app\build\intermediates\pre-dexed\release\Parse-1.10.1-e80e932c69f2f94319e44bd1a8322d75dcc17ebf.jar" />
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-aebaf7851496e5f71d44c7f172afe25ef12aaf58.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sid\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-de0d9c0d2b660abf7a0583e4e06e9581d5ba4d2c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sid\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.3.0\8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c\bolts-tasks-1.3.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c">
+        <dex dex="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.3.0-14ae40e176d11af9dc90fa16654fc3a43e27c78e.jar" />
     </item>
     <item
         jar="D:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\jars\classes.jar"
@@ -51,46 +44,18 @@
         <dex dex="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\classes-d36e8651054ca88a1ed5d0f769e4f8ee95fcfd18.jar" />
     </item>
     <item
-        jar="E:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="1821601ddbec5ff125653097812823388700af74">
-        <dex dex="E:\CampusConnect\app\build\intermediates\pre-dexed\release\classes-a7b5215271c47ba2ad100f3b25a8614c3e5bb18e.jar" />
-    </item>
-    <item
-        jar="C:\Users\Sid\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="E:\CampusConnect\app\build\intermediates\pre-dexed\release\support-annotations-22.2.1-de0d9c0d2b660abf7a0583e4e06e9581d5ba4d2c.jar" />
-    </item>
-    <item
-        jar="C:\Users\Sid\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.3.0\8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c\bolts-tasks-1.3.0.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c">
-        <dex dex="E:\CampusConnect\app\build\intermediates\pre-dexed\release\bolts-tasks-1.3.0-14ae40e176d11af9dc90fa16654fc3a43e27c78e.jar" />
-    </item>
-    <item
-        jar="E:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="E:\CampusConnect\app\build\intermediates\pre-dexed\release\classes-5d011d8d323a6784bb55d65654cf29bd2b1b6e37.jar" />
-    </item>
-    <item
-        jar="E:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jar="D:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="E:\CampusConnect\app\build\intermediates\pre-dexed\release\classes-1e8ecfebb079e543c31a6bec53dac56ff520a2ed.jar" />
+        <dex dex="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\classes-c196f0bd61b718e5f3d746d14ddb95c38b2bbb9c.jar" />
     </item>
     <item
-        jar="E:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jar="D:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="E:\CampusConnect\app\build\intermediates\pre-dexed\release\internal_impl-22.2.1-d7408f4fa70c2bf41727bcd85f864448e14e3209.jar" />
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\classes-b4e147e0339ce028be8bf029ca4c7fd70ac9d27f.jar" />
     </item>
 
 </items>

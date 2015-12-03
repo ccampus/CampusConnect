@@ -278,10 +278,21 @@
         android:textColor="#0a0220"
         android:onClick="UserProfileHandler"
         android:clickable="true"
-        android:layout_alignTop="@+id/textView23"
-        android:layout_toRightOf="@+id/textView23"
-        android:layout_toEndOf="@+id/textView23"
-        android:layout_marginLeft="18dp"
-        android:layout_marginStart="18dp" />
+        android:layout_alignTop="@+id/QsUserName"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="View Upvotes"
+        android:id="@+id/textView28"
+        android:textColor="#0a0220"
+        android:onClick="ViewUserUpvotesHandler"
+        android:clickable="true"
+        android:layout_alignTop="@+id/QsUpvotes"
+        android:layout_alignLeft="@+id/textView27"
+        android:layout_alignStart="@+id/textView27" />
 
 </RelativeLayout>

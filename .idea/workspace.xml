@@ -10,12 +10,817 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bec77ce-7970-4de7-a490-50cbb3ab92c7" name="Default" comment="">
+      <change type="DELETED" beforePath="D:\CampusConnect\.idea\libraries\Parse_1_10_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\.idea\libraries\appcompat_v7_22_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\.idea\libraries\bolts_android_1_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\.idea\libraries\bolts_applinks_1_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\.idea\libraries\bolts_tasks_1_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\.idea\libraries\design_22_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\.idea\libraries\support_annotations_22_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\.idea\libraries\support_v4_22_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\generated\source\buildConfig\release\com\example\sid\campusconnect\BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\generated\source\r\release\android\support\design\R.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\generated\source\r\release\android\support\v7\appcompat\R.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\generated\source\r\release\com\example\sid\campusconnect\R.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\debug\com\example\sid\campusconnect\Home$GetXMLTask.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\debug\com\example\sid\campusconnect\Homepage$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\debug\com\example\sid\campusconnect\Homepage.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\debug\com\example\sid\campusconnect\MainActivity$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\debug\com\example\sid\campusconnect\MainActivity$1$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\debug\com\example\sid\campusconnect\MainActivity$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\debug\com\example\sid\campusconnect\Profile$GetXMLTask.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\debug\com\example\sid\campusconnect\checker.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\debug\com\example\sid\campusconnect\sampleapp.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\design\R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\design\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\design\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\design\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\design\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\design\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\design\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\design\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\design\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\design\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\design\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\design\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\design\R.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\v7\appcompat\R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\v7\appcompat\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\v7\appcompat\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\v7\appcompat\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\v7\appcompat\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\v7\appcompat\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\v7\appcompat\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\v7\appcompat\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\v7\appcompat\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\v7\appcompat\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\v7\appcompat\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\v7\appcompat\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\android\support\v7\appcompat\R.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\AddQuestion$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\AddQuestion$2$1$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\AddQuestion$2$1$1$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\AddQuestion$2$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\AddQuestion$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\AddQuestion$2$2$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\AddQuestion$2$2$1$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\AddQuestion$2$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\AddQuestion$2$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\AddQuestion$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\AddQuestion.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\EmailReverify$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\EmailReverify.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\ForgotPassword$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\ForgotPassword$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\ForgotPassword$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\ForgotPassword.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\Home$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\Home$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\Home$GetXMLTask.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\Home.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\MainActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\MainActivity$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\MainActivity$2$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\MainActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\MainActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\MainActivity$4$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\MainActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\MainActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\ParseInitialize.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\Proceed.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\Profile$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\Profile$GetXMLTask.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\Profile.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$array.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$mipmap.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\R.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\SessionChecker.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\SignUpAdmin$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\SignUpAdmin$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\SignUpAdmin$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\SignUpAdmin.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\SignUpDetails$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\SignUpDetails$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\SignUpDetails$3.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\SignUpDetails$4.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\SignUpDetails.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\Signup$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\Signup$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\Signup$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\Signup.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\StudentVerify$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\StudentVerify$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\StudentVerify$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\StudentVerify$3.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\StudentVerify$4$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\StudentVerify$4.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\StudentVerify$5$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\StudentVerify$5.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\StudentVerify.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\StudentVerifyListAdapter$ViewHolder.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\StudentVerifyListAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\UserProfile$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\classes\release\com\example\sid\campusconnect\UserProfile.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\dex\release\classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\R.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\proguard.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\R.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\proguard.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\color\common_signin_btn_text_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\color\common_signin_btn_text_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\drawable-hdpi\common_full_open_on_phone.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\drawable-hdpi\common_ic_googleplayservices.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\drawable-mdpi\common_full_open_on_phone.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\drawable-tvdpi\common_full_open_on_phone.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\drawable-xhdpi\common_full_open_on_phone.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\drawable-xxhdpi\common_full_open_on_phone.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-af\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-am\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-ar\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-az-rAZ\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-bg\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-bn-rBD\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-ca\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-cs\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-da\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-de\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-el\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-en-rAU\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-en-rGB\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-en-rIN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-es-rUS\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-es\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-et-rEE\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-eu-rES\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-fa\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-fi\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-fr-rCA\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-fr\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-gl-rES\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-gu-rIN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-hi\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-hr\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-hu\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-hy-rAM\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-in\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-is-rIS\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-it\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-iw\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-ja\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-ka-rGE\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-kk-rKZ\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-km-rKH\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-kn-rIN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-ko\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-ky-rKG\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-lo-rLA\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-lt\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-lv\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-mk-rMK\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-ml-rIN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-mn-rMN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-mr-rIN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-ms-rMY\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-my-rMM\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-nb\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-ne-rNP\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-nl\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-pa-rIN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-pl\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-pt-rBR\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-pt-rPT\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-pt\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-ro\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-ru\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-si-rLK\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-sk\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-sl\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-sq-rAL\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-sr\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-sv\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-sw\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-ta-rIN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-te-rIN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-th\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-tl\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-tr\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-uk\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-ur-rPK\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-uz-rUZ\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-vi\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-zh-rCN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-zh-rHK\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-zh-rTW\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values-zu\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values\auth_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values\common_attrs.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values\common_colors.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\res\values\version.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\incremental\aidl\release\dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\incremental\mergeAssets\release\merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\incremental\mergeResourcesrelease\merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\manifests\full\release\AndroidManifest.xml" afterPath="" />
       <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\Parse-1.10.1-e80e932c69f2f94319e44bd1a8322d75dcc17ebf.jar" afterPath="" />
       <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\classes-1e8ecfebb079e543c31a6bec53dac56ff520a2ed.jar" afterPath="" />
       <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\classes-5d011d8d323a6784bb55d65654cf29bd2b1b6e37.jar" afterPath="" />
       <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\classes-a7b5215271c47ba2ad100f3b25a8614c3e5bb18e.jar" afterPath="" />
       <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-d7408f4fa70c2bf41727bcd85f864448e14e3209.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_gitignore" afterPath="$PROJECT_DIR$/_gitignore" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\release\Parse-1.10.1-db2c89a30d71b41e4966f89685dcc6ff5c7d0da6.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\release\Parse-1.10.1-e80e932c69f2f94319e44bd1a8322d75dcc17ebf.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\release\bolts-applinks-1.3.0-313b93b1bcd68bd8da80f449d14a4a3efd5ef267.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\release\bolts-tasks-1.3.0-14ae40e176d11af9dc90fa16654fc3a43e27c78e.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\release\classes-1e8ecfebb079e543c31a6bec53dac56ff520a2ed.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\release\classes-5d011d8d323a6784bb55d65654cf29bd2b1b6e37.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\release\classes-a7b5215271c47ba2ad100f3b25a8614c3e5bb18e.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\release\classes-b4e147e0339ce028be8bf029ca4c7fd70ac9d27f.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\release\classes-c196f0bd61b718e5f3d746d14ddb95c38b2bbb9c.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\release\classes-d36e8651054ca88a1ed5d0f769e4f8ee95fcfd18.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\release\internal_impl-22.2.1-aebaf7851496e5f71d44c7f172afe25ef12aaf58.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\release\internal_impl-22.2.1-d7408f4fa70c2bf41727bcd85f864448e14e3209.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\pre-dexed\release\support-annotations-22.2.1-de0d9c0d2b660abf7a0583e4e06e9581d5ba4d2c.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\anim\abc_fade_in.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\anim\abc_fade_out.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\anim\abc_grow_fade_in_from_bottom.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\anim\abc_popup_enter.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\anim\abc_popup_exit.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\anim\abc_shrink_fade_out_from_bottom.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\anim\abc_slide_in_bottom.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\anim\abc_slide_in_top.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\anim\abc_slide_out_bottom.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\anim\abc_slide_out_top.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\anim\fab_in.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\anim\fab_out.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\anim\snackbar_in.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\anim\snackbar_out.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\color-v11\abc_background_cache_hint_selector_material_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\color-v11\abc_background_cache_hint_selector_material_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\color\abc_background_cache_hint_selector_material_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\color\abc_background_cache_hint_selector_material_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\color\abc_primary_text_disable_only_material_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\color\abc_primary_text_disable_only_material_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\color\abc_primary_text_material_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\color\abc_primary_text_material_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\color\abc_search_url_text.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\color\abc_secondary_text_material_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\color\abc_secondary_text_material_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\color\switch_thumb_material_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\color\switch_thumb_material_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_ab_share_pack_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_btn_rating_star_off_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_btn_rating_star_on_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_cab_background_top_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_ic_commit_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_ic_go_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_ic_menu_share_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_list_divider_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_list_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_list_longpressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_list_pressed_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_list_pressed_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_list_selector_disabled_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_list_selector_disabled_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_menu_hardkey_panel_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_popup_background_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_text_cursor_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_textfield_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_textfield_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_textfield_search_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-hdpi\abc_textfield_search_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-hdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-hdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-hdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-hdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-mdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-mdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-mdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-mdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-xhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-xhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-xhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-xhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-xxhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-xxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-xxhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-xxhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-xxxhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-xxxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-xxxhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-ldrtl-xxxhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_ab_share_pack_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_btn_rating_star_off_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_btn_rating_star_on_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_cab_background_top_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_ic_commit_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_ic_go_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_ic_menu_share_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_list_divider_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_list_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_list_longpressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_list_pressed_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_list_pressed_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_list_selector_disabled_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_list_selector_disabled_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_menu_hardkey_panel_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_popup_background_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_text_cursor_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_textfield_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_textfield_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_textfield_search_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-mdpi\abc_textfield_search_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-v21\ic_menu_camera.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-v21\ic_menu_gallery.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-v21\ic_menu_manage.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-v21\ic_menu_send.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-v21\ic_menu_share.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-v21\ic_menu_slideshow.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_ab_share_pack_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_btn_rating_star_off_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_btn_rating_star_on_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_cab_background_top_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_ic_commit_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_ic_go_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_ic_menu_share_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_list_divider_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_list_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_list_longpressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_list_pressed_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_list_pressed_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_list_selector_disabled_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_list_selector_disabled_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_menu_hardkey_panel_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_popup_background_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_text_cursor_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_textfield_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_textfield_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_textfield_search_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xhdpi\abc_textfield_search_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_ab_share_pack_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_btn_rating_star_off_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_btn_rating_star_on_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_cab_background_top_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_ic_commit_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_ic_go_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_ic_menu_share_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_list_divider_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_list_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_list_longpressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_list_pressed_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_list_pressed_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_list_selector_disabled_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_list_selector_disabled_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_menu_hardkey_panel_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_popup_background_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_text_cursor_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_textfield_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_textfield_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_textfield_search_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxhdpi\abc_textfield_search_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_ic_menu_share_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable-xxxhdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_btn_borderless_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_btn_check_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_btn_default_mtrl_shape.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_btn_radio_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_cab_background_internal_bg.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_cab_background_top_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_dialog_material_background_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_dialog_material_background_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_edit_text_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_item_background_holo_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_item_background_holo_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_list_selector_background_transition_holo_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_list_selector_background_transition_holo_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_list_selector_holo_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_list_selector_holo_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_ratingbar_full_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_spinner_textfield_background_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_switch_thumb_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_tab_indicator_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\abc_textfield_search_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\bg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\button_border.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\campuslogo1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\fab_background.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\female.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\ic_account_box_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\ic_perm_identity_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\male.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\popup_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\side_nav_bar.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\snackbar_background.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\staff.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\student.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\unspecified.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\username.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\drawable\username1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout-sw600dp\layout_snackbar.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_action_bar_title_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_action_bar_up_container.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_action_bar_view_list_nav_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_action_menu_item_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_action_menu_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_action_mode_bar.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_action_mode_close_item_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_activity_chooser_view.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_activity_chooser_view_list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_alert_dialog_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_dialog_title_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_expanded_menu_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_list_menu_item_checkbox.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_list_menu_item_icon.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_list_menu_item_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_list_menu_item_radio.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_popup_menu_item_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_screen_content_include.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_screen_simple.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_screen_simple_overlay_action_mode.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_screen_toolbar.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_search_dropdown_item_icons_2line.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_search_view.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_select_dialog_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\abc_simple_dropdown_hint.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\activity_add_question.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\activity_email_reverify.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\activity_forgot_password.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\activity_home.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\activity_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\activity_proceed.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\activity_profile.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\activity_sign_up_admin.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\activity_sign_up_details.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\activity_signup.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\activity_student_verify.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\activity_user_profile.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\app_bar_home.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\content_home.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\content_proceed.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\content_profile.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\design_navigation_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\design_navigation_item_header.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\design_navigation_item_separator.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\design_navigation_item_subheader.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\design_navigation_menu.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\layout_snackbar.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\layout_snackbar_include.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\layout_tab_icon.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\layout_tab_text.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\nav_header_home.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\notification_media_action.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\notification_media_cancel_action.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\notification_template_big_media.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\notification_template_big_media_narrow.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\notification_template_lines.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\notification_template_media.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\notification_template_part_chronometer.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\notification_template_part_time.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\popup_dob.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\popup_signup.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\select_dialog_item_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\select_dialog_multichoice_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\select_dialog_singlechoice_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\student_verify_list.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\layout\support_simple_spinner_dropdown_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\menu\activity_home_drawer.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\menu\home.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\menu\menu_add_question.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\menu\menu_email_reverify.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\menu\menu_forgot_password.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\menu\menu_homepage.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\menu\menu_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\menu\menu_signup.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\menu\menu_universal.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\mipmap-hdpi\ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\mipmap-mdpi\ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\mipmap-xhdpi\ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\mipmap-xxhdpi\ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-af\values-af.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-am\values-am.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-ar\values-ar.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-bg\values-bg.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-bn-rBD\values-bn-rBD.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-ca\values-ca.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-cs\values-cs.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-da\values-da.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-de\values-de.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-el\values-el.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-en-rGB\values-en-rGB.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-en-rIN\values-en-rIN.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-es-rUS\values-es-rUS.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-es\values-es.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-et-rEE\values-et-rEE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-eu-rES\values-eu-rES.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-fa\values-fa.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-fi\values-fi.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-fr-rCA\values-fr-rCA.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-fr\values-fr.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-gl-rES\values-gl-rES.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-h720dp\values-h720dp.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-hdpi\values-hdpi.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-hi\values-hi.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-hr\values-hr.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-hu\values-hu.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-hy-rAM\values-hy-rAM.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-in\values-in.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-is-rIS\values-is-rIS.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-it\values-it.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-iw\values-iw.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-ja\values-ja.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-ka-rGE\values-ka-rGE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-kk-rKZ\values-kk-rKZ.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-km-rKH\values-km-rKH.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-kn-rIN\values-kn-rIN.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-ko\values-ko.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-ky-rKG\values-ky-rKG.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-land\values-land.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-large\values-large.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-lo-rLA\values-lo-rLA.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-lt\values-lt.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-lv\values-lv.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-mk-rMK\values-mk-rMK.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-ml-rIN\values-ml-rIN.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-mn-rMN\values-mn-rMN.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-mr-rIN\values-mr-rIN.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-ms-rMY\values-ms-rMY.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-my-rMM\values-my-rMM.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-nb\values-nb.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-ne-rNP\values-ne-rNP.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-nl\values-nl.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-pl\values-pl.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-port\values-port.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-pt-rPT\values-pt-rPT.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-pt\values-pt.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-ro\values-ro.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-ru\values-ru.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-si-rLK\values-si-rLK.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-sk\values-sk.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-sl\values-sl.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-sr\values-sr.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-sv\values-sv.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-sw600dp\values-sw600dp.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-sw\values-sw.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-ta-rIN\values-ta-rIN.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-te-rIN\values-te-rIN.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-th\values-th.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-tl\values-tl.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-tr\values-tr.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-uk\values-uk.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-ur-rPK\values-ur-rPK.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-uz-rUZ\values-uz-rUZ.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-v11\values-v11.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-v12\values-v12.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-v14\values-v14.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-v17\values-v17.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-v18\values-v18.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-v21\values-v21.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-vi\values-vi.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-w360dp\values-w360dp.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-w480dp\values-w480dp.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-w500dp\values-w500dp.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-w600dp\values-w600dp.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-w720dp\values-w720dp.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-w820dp\values-w820dp.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-xlarge-land\values-xlarge-land.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-xlarge\values-xlarge.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-zh-rCN\values-zh-rCN.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-zh-rHK\values-zh-rHK.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-zh-rTW\values-zh-rTW.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values-zu\values-zu.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\merged\release\values\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\res\resources-release.ap_" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\intermediates\symbols\release\R.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\outputs\apk\app-release-unaligned.apk" afterPath="" />
+      <change type="DELETED" beforePath="D:\CampusConnect\app\build\outputs\logs\manifest-merger-release-report.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/EmailReverify.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/EmailReverify.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/ForgotPassword.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/ForgotPassword.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/Home.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/Home.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/MainActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/Parse-1.10.1-db2c89a30d71b41e4966f89685dcc6ff5c7d0da6.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/Parse-1.10.1-db2c89a30d71b41e4966f89685dcc6ff5c7d0da6.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/Profile$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/Profile$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/Profile.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/Profile.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$1$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$1$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$2$1$1$1$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$2$1$1$1$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$2$1$1$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$2$1$1$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$2$1$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$2$1$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$2$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$2$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$2$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$2$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/QuestionDetail.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$mipmap.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$mipmap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/SignUpAdmin$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/SignUpAdmin$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/SignUpAdmin$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/SignUpAdmin$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/SignUpAdmin$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/SignUpAdmin$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/SignUpAdmin.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/SignUpAdmin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/SignUpDetails.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/SignUpDetails.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/Signup$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/Signup$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/Signup$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/Signup$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/Signup$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/Signup$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/Signup.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/Signup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/StudentVerifyListAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/StudentVerifyListAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/UserProfile.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/UserProfile.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/ViewQuestion.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/ViewQuestion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/ViewQuestionListAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sid/campusconnect/ViewQuestionListAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/bolts-applinks-1.3.0-313b93b1bcd68bd8da80f449d14a4a3efd5ef267.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/bolts-applinks-1.3.0-313b93b1bcd68bd8da80f449d14a4a3efd5ef267.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.3.0-14ae40e176d11af9dc90fa16654fc3a43e27c78e.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.3.0-14ae40e176d11af9dc90fa16654fc3a43e27c78e.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-b4e147e0339ce028be8bf029ca4c7fd70ac9d27f.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-b4e147e0339ce028be8bf029ca4c7fd70ac9d27f.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-c196f0bd61b718e5f3d746d14ddb95c38b2bbb9c.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-c196f0bd61b718e5f3d746d14ddb95c38b2bbb9c.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-d36e8651054ca88a1ed5d0f769e4f8ee95fcfd18.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-d36e8651054ca88a1ed5d0f769e4f8ee95fcfd18.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-aebaf7851496e5f71d44c7f172afe25ef12aaf58.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-aebaf7851496e5f71d44c7f172afe25ef12aaf58.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-de0d9c0d2b660abf7a0583e4e06e9581d5ba4d2c.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-de0d9c0d2b660abf7a0583e4e06e9581d5ba4d2c.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/aapt/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/aapt/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/sid/campusconnect/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/sid/campusconnect/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/aidl/android/support/v4/media/MediaMetadataCompat.aidl" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/aidl/android/support/v4/media/MediaMetadataCompat.aidl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/aidl/android/support/v4/media/session/MediaSessionCompat.aidl" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/aidl/android/support/v4/media/session/MediaSessionCompat.aidl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/aidl/android/support/v4/media/session/ParcelableVolumeInfo.aidl" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/aidl/android/support/v4/media/session/ParcelableVolumeInfo.aidl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/aidl/android/support/v4/media/session/PlaybackStateCompat.aidl" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/aidl/android/support/v4/media/session/PlaybackStateCompat.aidl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sid/campusconnect/QuestionDetail.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sid/campusconnect/QuestionDetail.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/sid/campusconnect/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/sid/campusconnect/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/aidl/android/support/v4/media/RatingCompat.aidl" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/aidl/android/support/v4/media/RatingCompat.aidl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_question_detail.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_question_detail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_question_detail.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_question_detail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_header.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_header.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_separator.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_separator.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_subheader.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_subheader.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_menu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/drawable/fab_background.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/drawable/fab_background.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/fab_background.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/fab_background.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/anim/fab_in.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/anim/fab_in.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/anim/fab_in.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/anim/fab_in.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/anim/fab_out.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/anim/fab_out.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/anim/fab_out.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/anim/fab_out.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_snackbar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_snackbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout-sw600dp/layout_snackbar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout-sw600dp/layout_snackbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/layout_snackbar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/layout_snackbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout-sw600dp/layout_snackbar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout-sw600dp/layout_snackbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_snackbar_include.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_snackbar_include.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/layout_snackbar_include.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/layout_snackbar_include.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_tab_icon.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_tab_icon.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/layout_tab_icon.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/layout_tab_icon.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_tab_text.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_tab_text.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/layout_tab_text.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/layout_tab_text.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResourcesdebug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResourcesdebug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/drawable/snackbar_background.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/drawable/snackbar_background.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/snackbar_background.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/snackbar_background.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/anim/snackbar_in.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/anim/snackbar_in.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/anim/snackbar_in.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/anim/snackbar_in.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/anim/snackbar_out.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/anim/snackbar_out.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/anim/snackbar_out.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/anim/snackbar_out.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-land/values-land.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-land/values-land.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-v21/values-v21.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-v21/values-v21.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CampusConnect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,42 +851,43 @@
       <file leaf-file-name="QuestionDetail.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sid/campusconnect/QuestionDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.029876977">
-              <caret line="266" column="76" selection-start-line="266" selection-start-column="76" selection-end-line="266" selection-end-column="76" />
+            <state vertical-scroll-proportion="1.4381721">
+              <caret line="496" column="56" selection-start-line="496" selection-start-column="56" selection-end-line="496" selection-end-column="56" />
               <folding>
-                <element signature="e#3389#8583#0" expanded="true" />
-                <element signature="e#4202#4891#0" expanded="true" />
-                <element signature="e#4890#4891#0" expanded="true" />
-                <element signature="e#5187#6116#0" expanded="true" />
-                <element signature="e#6115#6116#0" expanded="true" />
-                <element signature="e#8582#8583#0" expanded="true" />
-                <element signature="e#9075#18694#0" expanded="true" />
-                <element signature="e#10717#18279#0" expanded="true" />
-                <element signature="e#11907#17615#0" expanded="true" />
-                <element signature="e#12469#16581#0" expanded="true" />
-                <element signature="e#12949#16357#0" expanded="true" />
-                <element signature="e#13815#15869#0" expanded="true" />
-                <element signature="e#15868#15869#0" expanded="true" />
-                <element signature="e#16356#16357#0" expanded="true" />
-                <element signature="e#16580#16581#0" expanded="true" />
-                <element signature="e#17614#17615#0" expanded="true" />
-                <element signature="e#18278#18279#0" expanded="true" />
-                <element signature="e#18693#18694#0" expanded="true" />
+                <element signature="e#3496#9865#0" expanded="true" />
+                <element signature="e#4309#4998#0" expanded="true" />
+                <element signature="e#4997#4998#0" expanded="true" />
+                <element signature="e#5292#6023#0" expanded="true" />
+                <element signature="e#6022#6023#0" expanded="true" />
+                <element signature="e#6319#7399#0" expanded="true" />
+                <element signature="e#7398#7399#0" expanded="true" />
+                <element signature="e#9864#9865#0" expanded="true" />
+                <element signature="e#10357#20023#0" expanded="true" />
+                <element signature="e#11999#19608#0" expanded="true" />
+                <element signature="e#13236#18945#0" expanded="true" />
+                <element signature="e#13798#17910#0" expanded="true" />
+                <element signature="e#14278#17686#0" expanded="true" />
+                <element signature="e#15144#17198#0" expanded="true" />
+                <element signature="e#17197#17198#0" expanded="true" />
+                <element signature="e#17685#17686#0" expanded="true" />
+                <element signature="e#17909#17910#0" expanded="true" />
+                <element signature="e#18944#18945#0" expanded="true" />
+                <element signature="e#19607#19608#0" expanded="true" />
+                <element signature="e#20022#20023#0" expanded="true" />
+                <element signature="e#20311#29416#0" expanded="true" />
+                <element signature="e#21396#29002#0" expanded="true" />
+                <element signature="e#22594#28332#0" expanded="true" />
+                <element signature="e#23156#27289#0" expanded="true" />
+                <element signature="e#23638#27065#0" expanded="true" />
+                <element signature="e#24506#26575#0" expanded="true" />
+                <element signature="e#26574#26575#0" expanded="true" />
+                <element signature="e#27064#27065#0" expanded="true" />
+                <element signature="e#27288#27289#0" expanded="true" />
+                <element signature="e#28331#28332#0" expanded="true" />
+                <element signature="e#29001#29002#0" expanded="true" />
+                <element signature="e#29415#29416#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_question_detail.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_question_detail.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.206897">
-              <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -1537,9 +2343,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/_gitignore" />
+        <option value="$PROJECT_DIR$/_gitignore" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_question_detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sid/campusconnect/QuestionDetail.java" />
-        <option value="$PROJECT_DIR$/_gitignore" />
       </list>
     </option>
   </component>
@@ -1563,7 +2369,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+    <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -1575,31 +2381,14 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="CampusConnect" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CampusConnect" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1638,12 +2427,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
@@ -1848,11 +2636,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1860,13 +2648,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32998326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1903,24 +2691,90 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3389#8583#0" expanded="true" />
-            <element signature="e#4202#4891#0" expanded="true" />
-            <element signature="e#4890#4891#0" expanded="true" />
-            <element signature="e#5187#6116#0" expanded="true" />
-            <element signature="e#6115#6116#0" expanded="true" />
-            <element signature="e#8582#8583#0" expanded="true" />
-            <element signature="e#9075#18694#0" expanded="true" />
-            <element signature="e#10717#18279#0" expanded="true" />
-            <element signature="e#11907#17615#0" expanded="true" />
-            <element signature="e#12469#16581#0" expanded="true" />
-            <element signature="e#12949#16357#0" expanded="true" />
-            <element signature="e#13815#15869#0" expanded="true" />
-            <element signature="e#15868#15869#0" expanded="true" />
-            <element signature="e#16356#16357#0" expanded="true" />
-            <element signature="e#16580#16581#0" expanded="true" />
-            <element signature="e#17614#17615#0" expanded="true" />
-            <element signature="e#18278#18279#0" expanded="true" />
-            <element signature="e#18693#18694#0" expanded="true" />
+            <element signature="e#3496#9865#0" expanded="true" />
+            <element signature="e#4309#4998#0" expanded="true" />
+            <element signature="e#4997#4998#0" expanded="true" />
+            <element signature="e#5292#6023#0" expanded="true" />
+            <element signature="e#6022#6023#0" expanded="true" />
+            <element signature="e#6319#7399#0" expanded="true" />
+            <element signature="e#7398#7399#0" expanded="true" />
+            <element signature="e#9864#9865#0" expanded="true" />
+            <element signature="e#10357#20023#0" expanded="true" />
+            <element signature="e#11999#19608#0" expanded="true" />
+            <element signature="e#13236#18945#0" expanded="true" />
+            <element signature="e#13798#17910#0" expanded="true" />
+            <element signature="e#14278#17686#0" expanded="true" />
+            <element signature="e#15144#17198#0" expanded="true" />
+            <element signature="e#17197#17198#0" expanded="true" />
+            <element signature="e#17685#17686#0" expanded="true" />
+            <element signature="e#17909#17910#0" expanded="true" />
+            <element signature="e#18944#18945#0" expanded="true" />
+            <element signature="e#19607#19608#0" expanded="true" />
+            <element signature="e#20022#20023#0" expanded="true" />
+            <element signature="e#20311#29416#0" expanded="true" />
+            <element signature="e#21396#29002#0" expanded="true" />
+            <element signature="e#22594#28332#0" expanded="true" />
+            <element signature="e#23156#27289#0" expanded="true" />
+            <element signature="e#23638#27065#0" expanded="true" />
+            <element signature="e#24506#26575#0" expanded="true" />
+            <element signature="e#26574#26575#0" expanded="true" />
+            <element signature="e#27064#27065#0" expanded="true" />
+            <element signature="e#27288#27289#0" expanded="true" />
+            <element signature="e#28331#28332#0" expanded="true" />
+            <element signature="e#29001#29002#0" expanded="true" />
+            <element signature="e#29415#29416#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_question_detail.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sid/campusconnect/QuestionDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3496#9865#0" expanded="true" />
+            <element signature="e#4309#4998#0" expanded="true" />
+            <element signature="e#4997#4998#0" expanded="true" />
+            <element signature="e#5292#6023#0" expanded="true" />
+            <element signature="e#6022#6023#0" expanded="true" />
+            <element signature="e#6319#7399#0" expanded="true" />
+            <element signature="e#7398#7399#0" expanded="true" />
+            <element signature="e#9864#9865#0" expanded="true" />
+            <element signature="e#10357#20023#0" expanded="true" />
+            <element signature="e#11999#19608#0" expanded="true" />
+            <element signature="e#13236#18945#0" expanded="true" />
+            <element signature="e#13798#17910#0" expanded="true" />
+            <element signature="e#14278#17686#0" expanded="true" />
+            <element signature="e#15144#17198#0" expanded="true" />
+            <element signature="e#17197#17198#0" expanded="true" />
+            <element signature="e#17685#17686#0" expanded="true" />
+            <element signature="e#17909#17910#0" expanded="true" />
+            <element signature="e#18944#18945#0" expanded="true" />
+            <element signature="e#19607#19608#0" expanded="true" />
+            <element signature="e#20022#20023#0" expanded="true" />
+            <element signature="e#20311#29416#0" expanded="true" />
+            <element signature="e#21396#29002#0" expanded="true" />
+            <element signature="e#22594#28332#0" expanded="true" />
+            <element signature="e#23156#27289#0" expanded="true" />
+            <element signature="e#23638#27065#0" expanded="true" />
+            <element signature="e#24506#26575#0" expanded="true" />
+            <element signature="e#26574#26575#0" expanded="true" />
+            <element signature="e#27064#27065#0" expanded="true" />
+            <element signature="e#27288#27289#0" expanded="true" />
+            <element signature="e#28331#28332#0" expanded="true" />
+            <element signature="e#29001#29002#0" expanded="true" />
+            <element signature="e#29415#29416#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1941,24 +2795,38 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3389#8583#0" expanded="true" />
-            <element signature="e#4202#4891#0" expanded="true" />
-            <element signature="e#4890#4891#0" expanded="true" />
-            <element signature="e#5187#6116#0" expanded="true" />
-            <element signature="e#6115#6116#0" expanded="true" />
-            <element signature="e#8582#8583#0" expanded="true" />
-            <element signature="e#9075#18694#0" expanded="true" />
-            <element signature="e#10717#18279#0" expanded="true" />
-            <element signature="e#11907#17615#0" expanded="true" />
-            <element signature="e#12469#16581#0" expanded="true" />
-            <element signature="e#12949#16357#0" expanded="true" />
-            <element signature="e#13815#15869#0" expanded="true" />
-            <element signature="e#15868#15869#0" expanded="true" />
-            <element signature="e#16356#16357#0" expanded="true" />
-            <element signature="e#16580#16581#0" expanded="true" />
-            <element signature="e#17614#17615#0" expanded="true" />
-            <element signature="e#18278#18279#0" expanded="true" />
-            <element signature="e#18693#18694#0" expanded="true" />
+            <element signature="e#3496#9865#0" expanded="true" />
+            <element signature="e#4309#4998#0" expanded="true" />
+            <element signature="e#4997#4998#0" expanded="true" />
+            <element signature="e#5292#6023#0" expanded="true" />
+            <element signature="e#6022#6023#0" expanded="true" />
+            <element signature="e#6319#7399#0" expanded="true" />
+            <element signature="e#7398#7399#0" expanded="true" />
+            <element signature="e#9864#9865#0" expanded="true" />
+            <element signature="e#10357#20023#0" expanded="true" />
+            <element signature="e#11999#19608#0" expanded="true" />
+            <element signature="e#13236#18945#0" expanded="true" />
+            <element signature="e#13798#17910#0" expanded="true" />
+            <element signature="e#14278#17686#0" expanded="true" />
+            <element signature="e#15144#17198#0" expanded="true" />
+            <element signature="e#17197#17198#0" expanded="true" />
+            <element signature="e#17685#17686#0" expanded="true" />
+            <element signature="e#17909#17910#0" expanded="true" />
+            <element signature="e#18944#18945#0" expanded="true" />
+            <element signature="e#19607#19608#0" expanded="true" />
+            <element signature="e#20022#20023#0" expanded="true" />
+            <element signature="e#20311#29416#0" expanded="true" />
+            <element signature="e#21396#29002#0" expanded="true" />
+            <element signature="e#22594#28332#0" expanded="true" />
+            <element signature="e#23156#27289#0" expanded="true" />
+            <element signature="e#23638#27065#0" expanded="true" />
+            <element signature="e#24506#26575#0" expanded="true" />
+            <element signature="e#26574#26575#0" expanded="true" />
+            <element signature="e#27064#27065#0" expanded="true" />
+            <element signature="e#27288#27289#0" expanded="true" />
+            <element signature="e#28331#28332#0" expanded="true" />
+            <element signature="e#29001#29002#0" expanded="true" />
+            <element signature="e#29415#29416#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2000,17 +2868,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3427065">
           <caret line="159" column="0" selection-start-line="154" selection-start-column="16" selection-end-line="159" selection-end-column="0" />
-          <folding>
-            <element signature="e#3569#3768#0" expanded="true" />
-            <element signature="e#3767#3768#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94024605">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_question_detail.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.206897">
-          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.77962965">
+          <caret line="291" column="44" selection-start-line="291" selection-start-column="44" selection-end-line="291" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -2018,37 +2889,43 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94024605">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sid/campusconnect/QuestionDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029876977">
-          <caret line="266" column="76" selection-start-line="266" selection-start-column="76" selection-end-line="266" selection-end-column="76" />
+        <state vertical-scroll-proportion="1.4381721">
+          <caret line="496" column="56" selection-start-line="496" selection-start-column="56" selection-end-line="496" selection-end-column="56" />
           <folding>
-            <element signature="e#3389#8583#0" expanded="true" />
-            <element signature="e#4202#4891#0" expanded="true" />
-            <element signature="e#4890#4891#0" expanded="true" />
-            <element signature="e#5187#6116#0" expanded="true" />
-            <element signature="e#6115#6116#0" expanded="true" />
-            <element signature="e#8582#8583#0" expanded="true" />
-            <element signature="e#9075#18694#0" expanded="true" />
-            <element signature="e#10717#18279#0" expanded="true" />
-            <element signature="e#11907#17615#0" expanded="true" />
-            <element signature="e#12469#16581#0" expanded="true" />
-            <element signature="e#12949#16357#0" expanded="true" />
-            <element signature="e#13815#15869#0" expanded="true" />
-            <element signature="e#15868#15869#0" expanded="true" />
-            <element signature="e#16356#16357#0" expanded="true" />
-            <element signature="e#16580#16581#0" expanded="true" />
-            <element signature="e#17614#17615#0" expanded="true" />
-            <element signature="e#18278#18279#0" expanded="true" />
-            <element signature="e#18693#18694#0" expanded="true" />
+            <element signature="e#3496#9865#0" expanded="true" />
+            <element signature="e#4309#4998#0" expanded="true" />
+            <element signature="e#4997#4998#0" expanded="true" />
+            <element signature="e#5292#6023#0" expanded="true" />
+            <element signature="e#6022#6023#0" expanded="true" />
+            <element signature="e#6319#7399#0" expanded="true" />
+            <element signature="e#7398#7399#0" expanded="true" />
+            <element signature="e#9864#9865#0" expanded="true" />
+            <element signature="e#10357#20023#0" expanded="true" />
+            <element signature="e#11999#19608#0" expanded="true" />
+            <element signature="e#13236#18945#0" expanded="true" />
+            <element signature="e#13798#17910#0" expanded="true" />
+            <element signature="e#14278#17686#0" expanded="true" />
+            <element signature="e#15144#17198#0" expanded="true" />
+            <element signature="e#17197#17198#0" expanded="true" />
+            <element signature="e#17685#17686#0" expanded="true" />
+            <element signature="e#17909#17910#0" expanded="true" />
+            <element signature="e#18944#18945#0" expanded="true" />
+            <element signature="e#19607#19608#0" expanded="true" />
+            <element signature="e#20022#20023#0" expanded="true" />
+            <element signature="e#20311#29416#0" expanded="true" />
+            <element signature="e#21396#29002#0" expanded="true" />
+            <element signature="e#22594#28332#0" expanded="true" />
+            <element signature="e#23156#27289#0" expanded="true" />
+            <element signature="e#23638#27065#0" expanded="true" />
+            <element signature="e#24506#26575#0" expanded="true" />
+            <element signature="e#26574#26575#0" expanded="true" />
+            <element signature="e#27064#27065#0" expanded="true" />
+            <element signature="e#27288#27289#0" expanded="true" />
+            <element signature="e#28331#28332#0" expanded="true" />
+            <element signature="e#29001#29002#0" expanded="true" />
+            <element signature="e#29415#29416#0" expanded="true" />
           </folding>
         </state>
       </provider>

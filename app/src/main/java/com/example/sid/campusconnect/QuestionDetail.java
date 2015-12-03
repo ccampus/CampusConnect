@@ -41,6 +41,7 @@ public class QuestionDetail extends AppCompatActivity
     protected Button discuss;
     protected Button askstaff;
     protected Button reportqs;
+    protected TextView viewup;
 
     String s;
     java.sql.Date dob = null;
@@ -61,7 +62,10 @@ public class QuestionDetail extends AppCompatActivity
         downvote=(TextView)findViewById(R.id.textView21);
         adddate=(TextView)findViewById(R.id.textView20);
         usertype=(TextView)findViewById(R.id.textView19);
+
+        //text links
         userprofile=(TextView)findViewById(R.id.textView27);
+        viewup=(TextView)findViewById(R.id.textView28);
 
         //buttons
         upvotehandler=(Button)findViewById(R.id.Upvote);
@@ -98,8 +102,6 @@ public class QuestionDetail extends AppCompatActivity
                 usertyp = false;
             }
 
-
-
             final ParseQuery<ParseObject> query = ParseQuery.getQuery("Question");
 
             query.include("User_id");
@@ -135,6 +137,24 @@ public class QuestionDetail extends AppCompatActivity
                             }
                         });
 
+                        ParseQuery<ParseObject> predowncheck = ParseQuery.getQuery("Qs_Downvote");
+                        predowncheck.whereEqualTo("Qs_Id", questionid);
+                        predowncheck.whereEqualTo("User_Id", c);
+                        predowncheck.findInBackground(new FindCallback<ParseObject>() {
+                            public void done(List<ParseObject> resultList, ParseException e) {
+                                if (e == null) {
+                                    if (resultList.size() == 0) {
+                                    } else
+                                    {
+                                        downvotehandler.setText("Downvoted");
+                                        downvotehandler.setClickable(false);
+                                    }
+                                } else {
+                                    Log.d("Question", "Error: " + e.getMessage());
+                                }
+                            }
+                        });
+
                         String q =question_id;
 
                         ParseQuery<ParseObject> sup = ParseQuery.getQuery("Question");
@@ -150,6 +170,8 @@ public class QuestionDetail extends AppCompatActivity
                                     {
                                         upvotehandler.setText("Owner");
                                         upvotehandler.setClickable(false);
+                                        downvotehandler.setText("Owner");
+                                        downvotehandler.setClickable(false);
                                     }
                                     else
                                     {
@@ -161,7 +183,6 @@ public class QuestionDetail extends AppCompatActivity
                                 }
                             }
                         });
-
                                         //getting title
                                         String qstitle = question.getString("Title");
                                         title.setText(qstitle);
@@ -252,13 +273,13 @@ public class QuestionDetail extends AppCompatActivity
                                         public void done(List<ParseObject> selfList, ParseException e) {
                                             if (e == null) {
                                                 if (selfList.size() != 0) {
+                                                    upvotehandler.setText("Owner");
+                                                    upvotehandler.setClickable(false);
                                                     dlg.dismiss();
                                                     Toast toast = Toast.makeText(getApplicationContext(), "No Self Upvoting !", Toast.LENGTH_LONG);
                                                     toast.show();
-                                                    upvotehandler.setText("Owner");
-                                                    upvotehandler.setClickable(false);
-
-                                                } else {
+                                                } else
+                                                {
                                                     ParseQuery<ParseObject> firstquery = ParseQuery.getQuery("Qs_Upvote");
                                                     firstquery.whereEqualTo("Qs_Id", questionid);
                                                     firstquery.whereEqualTo("User_Id", current_user);
@@ -283,14 +304,14 @@ public class QuestionDetail extends AppCompatActivity
                                                                                                 @Override
                                                                                                 public void done(ParseException e) {
                                                                                                     if (e == null) {
-                                                                                                        dlg.dismiss();
                                                                                                         upvote_count = upvote_count + 1;
                                                                                                         String u = String.valueOf(upvote_count);
                                                                                                         upvote.setText(u);
-                                                                                                        Toast toast = Toast.makeText(getApplicationContext(), "Question Upvoted Successfully!", Toast.LENGTH_LONG);
-                                                                                                        toast.show();
                                                                                                         upvotehandler.setText("Upvoted");
                                                                                                         upvotehandler.setClickable(false);
+                                                                                                        dlg.dismiss();
+                                                                                                        Toast toast = Toast.makeText(getApplicationContext(), "Question Upvoted Successfully!", Toast.LENGTH_LONG);
+                                                                                                        toast.show();
                                                                                                     } else {
                                                                                                         Log.d("Upvote Error", e.getMessage());
 
@@ -307,11 +328,12 @@ public class QuestionDetail extends AppCompatActivity
                                                                     });
 
                                                                 } else {
+                                                                    upvotehandler.setText("Upvoted");
+                                                                    upvotehandler.setClickable(false);
                                                                     dlg.dismiss();
                                                                     Toast toast = Toast.makeText(getApplicationContext(), "Question Already Upvoted!", Toast.LENGTH_LONG);
                                                                     toast.show();
-                                                                    upvotehandler.setText("Upvoted");
-                                                                    upvotehandler.setClickable(false);
+
                                                                 }
                                                             } else {
                                                                 Log.d("score", "Error: " + e.getMessage());
@@ -320,12 +342,11 @@ public class QuestionDetail extends AppCompatActivity
                                                     });
                                                 }
                                             } else {
+                                                upvotehandler.setText("Owner");
+                                                upvotehandler.setClickable(false);
                                                 dlg.dismiss();
                                                 Toast toast = Toast.makeText(getApplicationContext(), "No Self Upvoting !", Toast.LENGTH_LONG);
                                                 toast.show();
-                                                upvotehandler.setText("Owner");
-                                                upvotehandler.setClickable(false);
-
                                             }
                                         }
                                     });
@@ -340,14 +361,120 @@ public class QuestionDetail extends AppCompatActivity
                         });
 
                         //downvote qs
+                        //SAME TO SAME COPY FROM UPVOTE
+                        // JUST CHANGE THE VALUES --> RESPECTIVE TABLE COLUMN VALUES
+                        // REST REMAINS SAME
 
                         downvotehandler.setOnClickListener(new View.OnClickListener() {
                             @Override
-                            public void onClick(View v) {
+                            public void onClick(View v)
+                            {
+                                //  progress dialog
+                                final ProgressDialog dlg = new ProgressDialog(QuestionDetail.this);
+                                dlg.setTitle("Please wait.");
+                                dlg.setMessage("Downvoting Question.Please wait...");
+                                dlg.show();
 
+
+                                final ParseUser current_user = ParseUser.getCurrentUser();
+                                final String qs_id = question_id;
+
+                                if (current_user != null) {
+                                    ParseQuery<ParseObject> selftupvotingquery = ParseQuery.getQuery("Question");
+                                    selftupvotingquery.whereEqualTo("User_id", current_user);
+                                    selftupvotingquery.whereEqualTo("objectId", qs_id);
+                                    selftupvotingquery.findInBackground(new FindCallback<ParseObject>() {
+
+                                        public void done(List<ParseObject> selfList, ParseException e) {
+                                            if (e == null) {
+                                                if (selfList.size() != 0) {
+                                                    downvotehandler.setText("Owner");
+                                                    downvotehandler.setClickable(false);
+                                                    dlg.dismiss();
+                                                    Toast toast = Toast.makeText(getApplicationContext(), "No Self Downvoting !", Toast.LENGTH_LONG);
+                                                    toast.show();
+
+                                                } else {
+                                                    ParseQuery<ParseObject> firstquery = ParseQuery.getQuery("Qs_Downvote");
+                                                    firstquery.whereEqualTo("Qs_Id", questionid);
+                                                    firstquery.whereEqualTo("User_Id", current_user);
+                                                    firstquery.findInBackground(new FindCallback<ParseObject>() {
+                                                        public void done(List<ParseObject> questionList, ParseException e) {
+                                                            if (e == null) {
+                                                                if (questionList.size() == 0) {
+                                                                    ParseQuery<ParseObject> query = ParseQuery.getQuery("Question");
+                                                                    query.getInBackground(qs_id, new GetCallback<ParseObject>() {
+
+                                                                        public void done(ParseObject question, ParseException e) {
+                                                                            if (e == null) {
+                                                                                question.increment("Downvote_Count");
+                                                                                question.saveInBackground(new SaveCallback() {
+                                                                                    @Override
+                                                                                    public void done(ParseException e) {
+                                                                                        if (e == null) {
+                                                                                            ParseObject qs_upvote = new ParseObject("Qs_Downvote");
+                                                                                            qs_upvote.put("Qs_Id", questionid);
+                                                                                            qs_upvote.put("User_Id", current_user);
+                                                                                            qs_upvote.saveInBackground(new SaveCallback() {
+                                                                                                @Override
+                                                                                                public void done(ParseException e) {
+                                                                                                    if (e == null) {
+                                                                                                        upvotehandler.setText("Downvoted");
+                                                                                                        upvotehandler.setClickable(false);
+                                                                                                        downvote_count = downvote_count + 1;
+                                                                                                        String u = String.valueOf(downvote_count);
+                                                                                                        downvote.setText(u);
+                                                                                                        dlg.dismiss();
+                                                                                                        Toast toast = Toast.makeText(getApplicationContext(), "Question Downvoted Successfully!", Toast.LENGTH_LONG);
+                                                                                                        toast.show();
+
+                                                                                                    } else {
+                                                                                                        Log.d("Downvote Error", e.getMessage());
+
+                                                                                                    }
+                                                                                                }
+                                                                                            });
+                                                                                        } else {
+                                                                                            Log.d("Downvote Error", e.getMessage());
+                                                                                        }
+                                                                                    }
+                                                                                });
+                                                                            }
+                                                                        }
+                                                                    });
+
+                                                                } else {
+                                                                    downvotehandler.setText("Downvoted");
+                                                                    downvotehandler.setClickable(false);
+                                                                    dlg.dismiss();
+                                                                    Toast toast = Toast.makeText(getApplicationContext(), "Question Already Downvoted!", Toast.LENGTH_LONG);
+                                                                    toast.show();
+
+                                                                }
+                                                            } else {
+                                                                Log.d("error", "Error: " + e.getMessage());
+                                                            }
+                                                        }
+                                                    });
+                                                }
+                                            } else {
+                                                downvotehandler.setText("Owner");
+                                                downvotehandler.setClickable(false);
+                                                dlg.dismiss();
+                                                Toast toast = Toast.makeText(getApplicationContext(), "No Self Downvoting !", Toast.LENGTH_LONG);
+                                                toast.show();
+
+                                            }
+                                        }
+                                    });
+
+                                } else {
+                                    Intent gotohome = new Intent(QuestionDetail.this, Home.class);
+                                    gotohome.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(gotohome);
+                                }
                             }
                         });
-
                         //report qs
 
                         reportqs.setOnClickListener(new View.OnClickListener() {
@@ -372,6 +499,12 @@ public class QuestionDetail extends AppCompatActivity
                     //NOTE: THE MOST IMP STEP ==> PASSING USERID THROUGH INTENT TO NEXT ACTIVITY
                     intent.putExtra("user_id", s);
                     startActivity(intent);
+                }
+
+                public void ViewUserUpvotesHandler(View v)
+                {
+                    Toast toast = Toast.makeText(getApplicationContext(),"sd",Toast.LENGTH_LONG);
+                    toast.show();
                 }
 
             }
