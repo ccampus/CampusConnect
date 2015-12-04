@@ -43,6 +43,7 @@ public class ViewQuestion extends ListActivity {
         {
 
             ParseQuery<ParseObject> query = ParseQuery.getQuery("Question");
+            query.whereNotEqualTo("Is_Reported",true);
             query.findInBackground(new FindCallback<ParseObject>()
             {
                 public void done(List<ParseObject> questionList, ParseException e) {

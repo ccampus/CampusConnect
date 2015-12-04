@@ -5,6 +5,7 @@ import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,28 +13,35 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.parse.DeleteCallback;
 import com.parse.FindCallback;
+import com.parse.FunctionCallback;
 import com.parse.GetCallback;
+import com.parse.ParseCloud;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ReportedQuestion extends ListActivity {
 
     protected List<ParseObject> mStatus;
-
+    RelativeLayout container;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reported_question);
+
+        container =(RelativeLayout)findViewById(R.id.listss);
 
         // loading
         final ProgressDialog QSloader = new ProgressDialog(ReportedQuestion.this);
@@ -56,8 +64,12 @@ public class ReportedQuestion extends ListActivity {
                         int length = questionList.size();
                         if(length==0)
                         {
-                            // add textbox saying no qs --> redirecting
                             QSloader.dismiss();
+                            TextView notice = new TextView(ReportedQuestion.this);
+                            notice.setText("NO Reported Questions ! Redirecting you to Homepage !");
+                            notice.setTextColor(Color.rgb(51, 204, 51));
+                            notice.setTextSize(20);
+                            container.addView(notice);
                             Toast toast = Toast.makeText(getApplicationContext(),"No Reported Questions!",Toast.LENGTH_LONG);
                             toast.show();
                             new Handler().postDelayed(new Runnable() {
@@ -67,7 +79,7 @@ public class ReportedQuestion extends ListActivity {
                                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                     startActivity(intent);
                                 }
-                            }, 1500);
+                            }, 3000);
                         }
                         else
                         {
@@ -130,10 +142,23 @@ public class ReportedQuestion extends ListActivity {
                         @Override
                         public void done(ParseException e) {
                             if (e == null) {
-                                QSloader.dismiss();
-                                Toast toast = Toast.makeText(getApplicationContext(), "Question Allowed !", Toast.LENGTH_LONG);
-                                toast.show();
-                                AutoRefresh();
+
+                                HashMap<String, String> params = new HashMap<String, String>();
+                                params.put("question_id", question_id);
+                                ParseCloud.callFunctionInBackground("PointsIncrement", params, new FunctionCallback<Map<String, String>>() {
+                                    public void done(Map<String, String> result, ParseException e) {
+                                        if (e == null)
+                                        {
+                                            QSloader.dismiss();
+                                            Toast toast = Toast.makeText(getApplicationContext(), "Question Allowed !", Toast.LENGTH_LONG);
+                                            toast.show();
+                                            AutoRefresh();
+
+                                        } else {
+                                            Log.d("Error is : ", e.getMessage());
+                                        }
+                                    }
+                                });
                             } else {
                                 Log.d("Error is : ", e.getMessage());
                             }
@@ -205,12 +230,6 @@ public class ReportedQuestion extends ListActivity {
 
     public void AutoRefresh()
     {
-        // loading
-        final ProgressDialog QSloader = new ProgressDialog(ReportedQuestion.this);
-        QSloader.setTitle("Please wait.");
-        QSloader.setMessage("Loading Reported Questions..");
-        QSloader.show();
-
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Question");
         query.whereEqualTo("Is_Reported", true);
         query.findInBackground(new FindCallback<ParseObject>() {
@@ -218,8 +237,6 @@ public class ReportedQuestion extends ListActivity {
                 if (e == null) {
                     int length = questionList.size();
                     if (length == 0) {
-                        // add textbox saying no qs --> redirecting
-                        QSloader.dismiss();
                         Toast toast = Toast.makeText(getApplicationContext(), "No Reported Questions!", Toast.LENGTH_LONG);
                         toast.show();
                         new Handler().postDelayed(new Runnable() {
@@ -229,9 +246,9 @@ public class ReportedQuestion extends ListActivity {
                                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                 startActivity(intent);
                             }
-                        }, 1500);
+                        }, 3000);
                     } else {
-                        QSloader.dismiss();
+
                         mStatus = questionList;
                         ReportedQsListAdapter adapter = new ReportedQsListAdapter(getListView().getContext(), mStatus);
                         setListAdapter(adapter);

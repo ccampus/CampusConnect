@@ -200,6 +200,29 @@ public class QuestionDetail extends AppCompatActivity
                                         String qsdes = question.getString("Description");
                                         des.setText(qsdes);
 
+                                        //fetching isreported
+                                        Boolean isreported =question.getBoolean("Is_Reported");
+                                        if(isreported)
+                                        {
+                                            reportqs.setText("Reported");
+                                            reportqs.setClickable(false);
+                                        }
+                                        else
+                                        {
+                                            // do nothing
+                                        }
+
+                                        //if question posted by admin
+                                        Boolean byadmin = question.getBoolean("By_Admin");
+                                        if(byadmin)
+                                        {
+                                            reportqs.setVisibility(View.GONE);
+                                        }
+                                        else
+                                        {
+                                            //do nothing
+                                        }
+
                                         //category
                                         String qscat = question.getString("Category");
                                         cat.setText(qscat);
@@ -683,11 +706,23 @@ public class QuestionDetail extends AppCompatActivity
                                                 public void done(ParseException e) {
                                                     if (e == null)
                                                     {
-                                                        reportqs.setText("Reported");
-                                                        reportqs.setClickable(false);
-                                                        QSloader.dismiss();
-                                                        Toast toast = Toast.makeText(getApplicationContext(), "Question Reported Successfully !", Toast.LENGTH_LONG);
-                                                        toast.show();
+                                                        HashMap<String, String> params = new HashMap<String, String>();
+                                                        params.put("question_id",question_id);
+                                                        ParseCloud.callFunctionInBackground("PointsDecrement", params, new FunctionCallback<Map<String, String>>() {
+                                                            public void done(Map<String, String> result, ParseException e) {
+                                                                if (e == null) {
+                                                                    //success
+                                                                    reportqs.setText("Reported");
+                                                                    reportqs.setClickable(false);
+                                                                    QSloader.dismiss();
+                                                                    Toast toast = Toast.makeText(getApplicationContext(), "Question Reported Successfully !", Toast.LENGTH_LONG);
+                                                                    toast.show();
+                                                                } else {
+                                                                    Log.d("Error is : ", e.getMessage());
+                                                                }
+                                                            }
+                                                        });
+
                                                     } else {
                                                         Log.d("Error is : ", e.getMessage());
                                                     }

@@ -173,7 +173,17 @@ public class Home extends AppCompatActivity
         }
         else if(id==R.id.nav_Reportqs)
         {
-            startActivity(new Intent(Home.this,ReportedQuestion.class));
+            if(user.getBoolean("Is_Admin")==true)
+            {
+
+                startActivity(new Intent(Home.this,ReportedQuestion.class));
+
+            }
+            else
+            {
+                Toast.makeText(Home.this,"Only Staff has this right",Toast.LENGTH_LONG).show();
+            }
+
         }
         else if (id == R.id.nav_manage)
         {
