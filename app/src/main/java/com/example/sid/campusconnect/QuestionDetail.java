@@ -14,7 +14,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.parse.FindCallback;
+import com.parse.FunctionCallback;
 import com.parse.GetCallback;
+import com.parse.ParseCloud;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
@@ -23,7 +25,9 @@ import com.parse.SaveCallback;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class QuestionDetail extends AppCompatActivity
 {
@@ -174,6 +178,8 @@ public class QuestionDetail extends AppCompatActivity
                                         upvotehandler.setClickable(false);
                                         downvotehandler.setText("Owner");
                                         downvotehandler.setClickable(false);
+                                        reportqs.setText("Owner");
+                                        reportqs.setClickable(false);
                                     }
                                     else
                                     {
@@ -305,7 +311,92 @@ public class QuestionDetail extends AppCompatActivity
                                                                                             qs_upvote.saveInBackground(new SaveCallback() {
                                                                                                 @Override
                                                                                                 public void done(ParseException e) {
-                                                                                                    if (e == null) {
+                                                                                                    if (e == null)
+                                                                                                    {
+                                                                                                        HashMap<String, String> params = new HashMap<String, String>();
+                                                                                                        params.put("question_id",question_id);
+                                                                                                        /*
+                                                                                                                Parse.Cloud.define("PointsIncrement", function (request, response) {
+
+                                                                                                            	Parse.Cloud.useMasterKey();
+	                                                                                                            var qsid = request.params.question_id;
+                                                                                                                var qs = Parse.Object.extend("Question");
+                                                                                                                var query = new Parse.Query(qs);
+
+                                                                                                                query.include("User_id");
+
+                                                                                                                query.get(qsid, {
+
+                                                                                                                    success: function (query) {
+
+                                                                                                                        var user = query.get("User_id");
+                                                                                                                        var user_id = user.id; // for getting user_id
+                                                                                                                        var points = user.get("Points");
+                                                                                                                        var rating = user.get("Rating");
+                                                                                                                        var newpoints = points + 5;
+                                                                                                                        if(newpoints <=100)
+                                                                                                                        {
+                                                                                                                            rating="n";
+                                                                                                                        }
+                                                                                                                        else if((newpoints > 100) && (newpoints <=200))
+                                                                                                                        {
+                                                                                                                        rating="ap";
+                                                                                                                        }
+                                                                                                                        else if((newpoints > 200)&&(newpoints <=300))
+                                                                                                                        {
+                                                                                                                            rating="ad";
+                                                                                                                        }
+                                                                                                                        else if((newpoints>300)&&(newpoints<=400))
+                                                                                                                        {
+                                                                                                                            rating="e"
+                                                                                                                        }
+                                                                                                                        else if((newpoints>400)&&(newpoints<=500))
+                                                                                                                        {
+                                                                                                                            rating="m";
+                                                                                                                        }
+                                                                                                                        else
+                                                                                                                        {
+                                                                                                                            rating="m";
+                                                                                                                        }
+                                                                                                                        var query = new Parse.Query(Parse.User);
+
+                                                                                                                    query.get(user_id).then(function (user) {
+                                                                                                                    user.set("Points",newpoints);
+                                                                                                                    user.set("Rating",rating);
+                                                                                                                    user.save(null, {
+                                                                                                                        success: function (user) {
+                                                                                                                            response.success(display);
+                                                                                                                        },
+                                                                                                                        error: function (user, error) {
+                                                                                                                            response.error(error);
+                                                                                                                        }
+                                                                                                                    });
+                                                                                                                }).then(function () {
+                                                                                                                        response.success(display);
+                                                                                                                    },
+                                                                                                                    function (error) {
+                                                                                                                        response.error(error);
+                                                                                                                    });
+
+                                                                                                                    },
+                                                                                                                    error: function (query, error) {
+                                                                                                                        response.error(error);
+                                                                                                                    }
+                                                                                                                });
+                                                                                                            });
+                                                                                                        */
+
+                                                                                                        ParseCloud.callFunctionInBackground("PointsIncrement", params, new FunctionCallback<Map<String, String>>() {
+                                                                                                            public void done(Map<String, String> result, ParseException e) {
+                                                                                                                if (e == null) {
+                                                                                                                    //success
+                                                                                                                }
+                                                                                                                else
+                                                                                                                {
+                                                                                                                    Log.d("Error is : ",e.getMessage());
+                                                                                                                }
+                                                                                                            }
+                                                                                                        });
                                                                                                         upvote_count = upvote_count + 1;
                                                                                                         String u = String.valueOf(upvote_count);
                                                                                                         upvote.setText(u);
@@ -314,7 +405,8 @@ public class QuestionDetail extends AppCompatActivity
                                                                                                         dlg.dismiss();
                                                                                                         Toast toast = Toast.makeText(getApplicationContext(), "Question Upvoted Successfully!", Toast.LENGTH_LONG);
                                                                                                         toast.show();
-                                                                                                    } else {
+                                                                                                    }
+                                                                                                    else {
                                                                                                         Log.d("Upvote Error", e.getMessage());
 
                                                                                                     }
@@ -421,6 +513,93 @@ public class QuestionDetail extends AppCompatActivity
                                                                                                 @Override
                                                                                                 public void done(ParseException e) {
                                                                                                     if (e == null) {
+
+                                                                                                        HashMap<String, String> params = new HashMap<String, String>();
+                                                                                                        params.put("question_id",question_id);
+                                                                                                        /*
+                                                                                                                Parse.Cloud.define("PointsDerement", function (request, response) {
+
+                                                                                                            	Parse.Cloud.useMasterKey();
+	                                                                                                            var qsid = request.params.question_id;
+                                                                                                                var qs = Parse.Object.extend("Question");
+                                                                                                                var query = new Parse.Query(qs);
+
+                                                                                                                query.include("User_id");
+
+                                                                                                                query.get(qsid, {
+
+                                                                                                                    success: function (query) {
+
+                                                                                                                        var user = query.get("User_id");
+                                                                                                                        var user_id = user.id; // for getting user_id
+                                                                                                                        var points = user.get("Points");
+                                                                                                                        var rating = user.get("Rating");
+                                                                                                                        var newpoints = points - 5;
+                                                                                                                        if(newpoints <=100)
+                                                                                                                        {
+                                                                                                                            rating="n";
+                                                                                                                        }
+                                                                                                                        else if((newpoints > 100) && (newpoints <=200))
+                                                                                                                        {
+                                                                                                                        rating="ap";
+                                                                                                                        }
+                                                                                                                        else if((newpoints > 200)&&(newpoints <=300))
+                                                                                                                        {
+                                                                                                                            rating="ad";
+                                                                                                                        }
+                                                                                                                        else if((newpoints>300)&&(newpoints<=400))
+                                                                                                                        {
+                                                                                                                            rating="e"
+                                                                                                                        }
+                                                                                                                        else if((newpoints>400)&&(newpoints<=500))
+                                                                                                                        {
+                                                                                                                            rating="m";
+                                                                                                                        }
+                                                                                                                        else
+                                                                                                                        {
+                                                                                                                            rating="m";
+                                                                                                                        }
+                                                                                                                        var query = new Parse.Query(Parse.User);
+
+                                                                                                                    query.get(user_id).then(function (user) {
+                                                                                                                    user.set("Points",newpoints);
+                                                                                                                    user.set("Rating",rating);
+                                                                                                                    user.save(null, {
+                                                                                                                        success: function (user) {
+                                                                                                                            response.success(display);
+                                                                                                                        },
+                                                                                                                        error: function (user, error) {
+                                                                                                                            response.error(error);
+                                                                                                                        }
+                                                                                                                    });
+                                                                                                                }).then(function () {
+                                                                                                                        response.success(display);
+                                                                                                                    },
+                                                                                                                    function (error) {
+                                                                                                                        response.error(error);
+                                                                                                                    });
+
+                                                                                                                    },
+                                                                                                                    error: function (query, error) {
+                                                                                                                        response.error(error);
+                                                                                                                    }
+                                                                                                                });
+                                                                                                            });
+                                                                                                        */
+
+                                                                                                        ParseCloud.callFunctionInBackground("PointsDecrement", params, new FunctionCallback<Map<String, String>>() {
+                                                                                                            public void done(Map<String, String> result, ParseException e) {
+                                                                                                                if (e == null) {
+                                                                                                                    //success
+                                                                                                                }
+                                                                                                                else
+                                                                                                                {
+                                                                                                                    Log.d("Error is : ",e.getMessage());
+                                                                                                                }
+                                                                                                            }
+                                                                                                        });
+
+
                                                                                                         downvotehandler.setText("Downvoted");
                                                                                                         downvotehandler.setClickable(false);
                                                                                                         downvote_count = downvote_count + 1;
