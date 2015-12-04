@@ -2,6 +2,7 @@ package com.example.sid.campusconnect;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -42,7 +43,7 @@ public class QuestionDetail extends AppCompatActivity
     protected Button askstaff;
     protected Button reportqs;
     protected TextView viewup;
-
+    String quest;
     String s;
     java.sql.Date dob = null;
     ParseObject questionid;
@@ -80,6 +81,7 @@ public class QuestionDetail extends AppCompatActivity
         //Receiving question_id through intent
         Intent intent = getIntent();
         final String question_id = intent.getStringExtra("question_id");
+        quest=question_id;
 
         //  progress dialog
         final ProgressDialog qsloader = new ProgressDialog(QuestionDetail.this);
@@ -419,8 +421,8 @@ public class QuestionDetail extends AppCompatActivity
                                                                                                 @Override
                                                                                                 public void done(ParseException e) {
                                                                                                     if (e == null) {
-                                                                                                        upvotehandler.setText("Downvoted");
-                                                                                                        upvotehandler.setClickable(false);
+                                                                                                        downvotehandler.setText("Downvoted");
+                                                                                                        downvotehandler.setClickable(false);
                                                                                                         downvote_count = downvote_count + 1;
                                                                                                         String u = String.valueOf(downvote_count);
                                                                                                         downvote.setText(u);
@@ -503,8 +505,9 @@ public class QuestionDetail extends AppCompatActivity
 
                 public void ViewUserUpvotesHandler(View v)
                 {
-                    Toast toast = Toast.makeText(getApplicationContext(),"sd",Toast.LENGTH_LONG);
-                    toast.show();
+                    Intent intent = new Intent(QuestionDetail.this,ViewUpvotes.class);
+                    intent.putExtra("question_id",quest);
+                    startActivity(intent);
                 }
 
             }

@@ -105,4 +105,5 @@
     <string name="title_activity_add_question">Add Question</string>
     <string name="title_activity_view_question">Questions</string>
     <string name="title_activity_question_detail">Question Details</string>
+    <string name="title_activity_view_upvotes">View Upvotes</string>
 </resources>

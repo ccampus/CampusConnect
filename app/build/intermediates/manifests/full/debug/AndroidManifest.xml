@@ -79,6 +79,10 @@
             android:name="com.example.sid.campusconnect.QuestionDetail"
             android:label="@string/title_activity_question_detail" >
         </activity>
+        <activity
+            android:name="com.example.sid.campusconnect.ViewUpvotes"
+            android:label="@string/title_activity_view_upvotes" >
+        </activity>
     </application>
 
 </manifest>
