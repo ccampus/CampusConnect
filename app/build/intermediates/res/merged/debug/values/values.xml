@@ -445,6 +445,7 @@
     <string name="title_activity_proceed">Proceed</string>
     <string name="title_activity_profile">Profile</string>
     <string name="title_activity_question_detail">Question Details</string>
+    <string name="title_activity_reported_question">Reported Questions</string>
     <string name="title_activity_sign_up_admin">SignUpAdmin</string>
     <string name="title_activity_signup">Signup</string>
     <string name="title_activity_student_verify">Student Verification</string>

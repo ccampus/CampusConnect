@@ -77,6 +77,10 @@
             android:name=".ViewUpvotes"
             android:label="@string/title_activity_view_upvotes" >
         </activity>
+        <activity
+            android:name=".ReportedQuestion"
+            android:label="@string/title_activity_reported_question" >
+        </activity>
     </application>
 
 </manifest>

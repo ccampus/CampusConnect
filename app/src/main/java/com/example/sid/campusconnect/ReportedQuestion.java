@@ -1,0 +1,247 @@
+package com.example.sid.campusconnect;
+
+import android.app.AlertDialog;
+import android.app.ListActivity;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.parse.DeleteCallback;
+import com.parse.FindCallback;
+import com.parse.GetCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
+import com.parse.SaveCallback;
+
+import java.util.List;
+
+public class ReportedQuestion extends ListActivity {
+
+    protected List<ParseObject> mStatus;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_reported_question);
+
+        // loading
+        final ProgressDialog QSloader = new ProgressDialog(ReportedQuestion.this);
+        QSloader.setTitle("Please wait.");
+        QSloader.setMessage("Loading Reported Questions..");
+        QSloader.show();
+
+        ParseUser current_user = ParseUser.getCurrentUser();
+
+        if (current_user != null)
+        {
+
+            ParseQuery<ParseObject> query = ParseQuery.getQuery("Question");
+            query.whereEqualTo("Is_Reported", true);
+            query.findInBackground(new FindCallback<ParseObject>()
+            {
+                public void done(List<ParseObject> questionList, ParseException e) {
+                    if (e == null)
+                    {
+                        int length = questionList.size();
+                        if(length==0)
+                        {
+                            // add textbox saying no qs --> redirecting
+                            QSloader.dismiss();
+                            Toast toast = Toast.makeText(getApplicationContext(),"No Reported Questions!",Toast.LENGTH_LONG);
+                            toast.show();
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Intent intent = new Intent(ReportedQuestion.this, Home.class);
+                                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent);
+                                }
+                            }, 1500);
+                        }
+                        else
+                        {
+                            QSloader.dismiss();
+                            mStatus = questionList;
+                            ReportedQsListAdapter adapter = new ReportedQsListAdapter(getListView().getContext(), mStatus);
+                            setListAdapter(adapter);
+                        }
+                    }
+                    else
+                    {
+                        Log.d("Question ", "Error: " + e.getMessage());
+                    }
+                }
+            });
+
+        } else
+        {
+            Intent intent = new Intent(ReportedQuestion.this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        }
+    }
+
+    public void ReReadFullQsHandler(View v)
+    {
+
+        View parentView = (View) v.getParent();
+        View gparent =(View)parentView.getParent();
+        TextView sd = (TextView)gparent.findViewById(R.id.ReQsId);
+        final String question_id = sd.getText().toString();
+
+        Intent intent = new Intent(ReportedQuestion.this,QuestionDetail.class);
+        //NOTE: THE MOST IMP STEP ==> PASSING QuestionID THROUGH INTENT TO NEXT ACTIVITY
+        intent.putExtra("question_id", question_id);
+        startActivity(intent);
+    }
+
+    public void AcceptQsHandler(View v)
+    {
+
+        // loading
+        final ProgressDialog QSloader = new ProgressDialog(ReportedQuestion.this);
+        QSloader.setTitle("Please wait.");
+        QSloader.setMessage("Accepting Question..");
+        QSloader.show();
+
+        View parentView = (View) v.getParent();
+        View gparent =(View)parentView.getParent();
+        TextView sd = (TextView)gparent.findViewById(R.id.ReQsId);
+        final String question_id = sd.getText().toString();
+
+
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Question");
+        query.getInBackground(question_id, new GetCallback<ParseObject>() {
+            public void done(ParseObject object, ParseException e) {
+                if (e == null) {
+                    object.put("Is_Reported", false);
+                    object.saveInBackground(new SaveCallback() {
+                        @Override
+                        public void done(ParseException e) {
+                            if (e == null) {
+                                QSloader.dismiss();
+                                Toast toast = Toast.makeText(getApplicationContext(), "Question Allowed !", Toast.LENGTH_LONG);
+                                toast.show();
+                                AutoRefresh();
+                            } else {
+                                Log.d("Error is : ", e.getMessage());
+                            }
+                        }
+                    });
+                }
+            }
+        });
+
+    }
+
+    public void RejectQsHandler(View v)
+    {
+        // loading
+        final ProgressDialog QSloader = new ProgressDialog(ReportedQuestion.this);
+        QSloader.setTitle("Please wait.");
+        QSloader.setMessage("Removing Question..");
+        QSloader.show();
+
+        View parentView = (View) v.getParent();
+        View gparent =(View)parentView.getParent();
+        TextView sd = (TextView)gparent.findViewById(R.id.ReQsId);
+        final String question_id = sd.getText().toString();
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Do you want to remove this Question ?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id)
+                    {
+                        ParseQuery<ParseObject> query = ParseQuery.getQuery("Question");
+                        query.getInBackground(question_id, new GetCallback<ParseObject>() {
+                            public void done(ParseObject object, ParseException e) {
+                                if (e == null)
+                                {
+                                    object.deleteInBackground(new DeleteCallback() {
+                                        @Override
+                                        public void done(ParseException e) {
+
+                                            if (e == null) {
+                                                QSloader.dismiss();
+                                                Toast toast = Toast.makeText(getApplicationContext(), "Question Removed Successfully!", Toast.LENGTH_LONG);
+                                                toast.show();
+                                                AutoRefresh();
+                                            } else {
+                                                Log.d("Error is : ", e.getMessage());
+                                            }
+                                        }
+                                    });
+
+                                }
+                            }
+                        });
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+
+        //Creating dialog box
+        AlertDialog alert = builder.create();
+        //Setting the title manually
+        alert.setTitle("Remove Question");
+        alert.show();
+
+    }
+
+    public void AutoRefresh()
+    {
+        // loading
+        final ProgressDialog QSloader = new ProgressDialog(ReportedQuestion.this);
+        QSloader.setTitle("Please wait.");
+        QSloader.setMessage("Loading Reported Questions..");
+        QSloader.show();
+
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Question");
+        query.whereEqualTo("Is_Reported", true);
+        query.findInBackground(new FindCallback<ParseObject>() {
+            public void done(List<ParseObject> questionList, ParseException e) {
+                if (e == null) {
+                    int length = questionList.size();
+                    if (length == 0) {
+                        // add textbox saying no qs --> redirecting
+                        QSloader.dismiss();
+                        Toast toast = Toast.makeText(getApplicationContext(), "No Reported Questions!", Toast.LENGTH_LONG);
+                        toast.show();
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                Intent intent = new Intent(ReportedQuestion.this, Home.class);
+                                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                startActivity(intent);
+                            }
+                        }, 1500);
+                    } else {
+                        QSloader.dismiss();
+                        mStatus = questionList;
+                        ReportedQsListAdapter adapter = new ReportedQsListAdapter(getListView().getContext(), mStatus);
+                        setListAdapter(adapter);
+                    }
+                } else {
+                    Log.d("Question ", "Error: " + e.getMessage());
+                }
+            }
+        });
+
+    }
+
+}

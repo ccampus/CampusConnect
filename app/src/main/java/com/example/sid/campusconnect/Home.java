@@ -171,6 +171,10 @@ public class Home extends AppCompatActivity
         {
             startActivity(new Intent(Home.this,AddQuestion.class));
         }
+        else if(id==R.id.nav_Reportqs)
+        {
+            startActivity(new Intent(Home.this,ReportedQuestion.class));
+        }
         else if (id == R.id.nav_manage)
         {
             if(user.getBoolean("Is_Admin")==true)

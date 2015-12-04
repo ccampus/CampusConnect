@@ -107,10 +107,10 @@ public class StudentVerify extends ListActivity {
             public void done(Map<String, String> result, ParseException e) {
                 if (e == null) {
                     Toast.makeText(getApplicationContext(), result.get("verify_result"), Toast.LENGTH_LONG).show();
+                    AutoRefresh();
                 }
             }
         });
-        AutoRefresh();
     }
 
     public void InfoHandler(View v)
@@ -147,8 +147,8 @@ public class StudentVerify extends ListActivity {
         final String user_id = btnChild.getText().toString();
 
         // for testing :)
-        Toast toast =Toast.makeText(getApplicationContext(),user_id,Toast.LENGTH_LONG);
-        toast.show();
+        //Toast toast =Toast.makeText(getApplicationContext(),user_id,Toast.LENGTH_LONG);
+        //toast.show();
 
         AlertDialog.Builder discarduser = new AlertDialog.Builder(this);
         discarduser.setMessage("Do you want to Discard this Student ?")

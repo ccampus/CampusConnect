@@ -174,6 +174,7 @@ public class QuestionDetail extends AppCompatActivity
                                 {
                                     if(reList.size()!=0)
                                     {
+                                        // implement already reported qs
                                         upvotehandler.setText("Owner");
                                         upvotehandler.setClickable(false);
                                         downvotehandler.setText("Owner");
@@ -656,11 +657,45 @@ public class QuestionDetail extends AppCompatActivity
                                 }
                             }
                         });
+
                         //report qs
 
                         reportqs.setOnClickListener(new View.OnClickListener() {
                             @Override
-                            public void onClick(View v) {
+                            public void onClick(View v)
+                            {
+
+                                // loading
+                                final ProgressDialog QSloader = new ProgressDialog(QuestionDetail.this);
+                                QSloader.setTitle("Please wait.");
+                                QSloader.setMessage("Reporting Question..");
+                                QSloader.show();
+
+                                String quest_id = question_id;
+
+                                ParseQuery<ParseObject> query = ParseQuery.getQuery("Question");
+                                query.getInBackground(quest_id, new GetCallback<ParseObject>() {
+                                    public void done(ParseObject object, ParseException e) {
+                                        if (e == null) {
+                                            object.put("Is_Reported", true);
+                                            object.saveInBackground(new SaveCallback() {
+                                                @Override
+                                                public void done(ParseException e) {
+                                                    if (e == null)
+                                                    {
+                                                        reportqs.setText("Reported");
+                                                        reportqs.setClickable(false);
+                                                        QSloader.dismiss();
+                                                        Toast toast = Toast.makeText(getApplicationContext(), "Question Reported Successfully !", Toast.LENGTH_LONG);
+                                                        toast.show();
+                                                    } else {
+                                                        Log.d("Error is : ", e.getMessage());
+                                                    }
+                                                }
+                                            });
+                                        }
+                                    }
+                                });
 
                             }
                         });
