@@ -216,6 +216,7 @@ public class ReportedQuestion extends ListActivity {
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
+                        QSloader.dismiss();
                         dialog.cancel();
                     }
                 });
