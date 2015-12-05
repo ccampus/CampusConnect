@@ -261,5 +261,4 @@ public class ReportedQuestion extends ListActivity {
         });
 
     }
-
 }

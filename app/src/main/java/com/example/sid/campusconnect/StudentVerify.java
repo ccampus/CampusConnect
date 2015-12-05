@@ -5,11 +5,13 @@ import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,11 +30,14 @@ import java.util.Map;
 public class StudentVerify extends ListActivity {
 
     protected  List<ParseObject> mStatus;
+    RelativeLayout container;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_verify);
+
+        container =(RelativeLayout)findViewById(R.id.studentlist);
 
         // loading
         final ProgressDialog unverifiedloader = new ProgressDialog(StudentVerify.this);
@@ -58,6 +63,12 @@ public class StudentVerify extends ListActivity {
                         int length = studentList.size();
                         if(length==0)
                         {
+                            unverifiedloader.dismiss();
+                            TextView notice = new TextView(StudentVerify.this);
+                            notice.setText("NO Unverified Students ! Redirecting you to Homepage !");
+                            notice.setTextColor(Color.rgb(51, 204, 51));
+                            notice.setTextSize(20);
+                            container.addView(notice);
                             Toast toast = Toast.makeText(getApplicationContext(),"No Unverified Students !",Toast.LENGTH_LONG);
                             toast.show();
                             new Handler().postDelayed(new Runnable() {
@@ -184,11 +195,6 @@ public class StudentVerify extends ListActivity {
 
     public void AutoRefresh()
     {
-        // loading
-        final ProgressDialog unverifiedloader = new ProgressDialog(StudentVerify.this);
-        unverifiedloader.setTitle("Please wait.");
-        unverifiedloader.setMessage("Refreshing..");
-        unverifiedloader.show();
 
         ParseQuery<ParseObject> query = ParseQuery.getQuery("_User");
         query.whereNotEqualTo("Is_Admin", true);
@@ -200,7 +206,8 @@ public class StudentVerify extends ListActivity {
             public void done(List<ParseObject> studentList, ParseException e) {
                 if (e == null) {
                     int length = studentList.size();
-                    if (length == 0) {
+                    if (length == 0)
+                    {
                         Toast toast = Toast.makeText(getApplicationContext(), "No Unverified Students !", Toast.LENGTH_LONG);
                         toast.show();
                         new Handler().postDelayed(new Runnable() {
@@ -211,8 +218,8 @@ public class StudentVerify extends ListActivity {
                                 startActivity(intent);
                             }
                         }, 5000);
-                    } else {
-                        unverifiedloader.dismiss();
+                    } else
+                    {
                         mStatus = studentList;
                         StudentVerifyListAdapter adapter = new StudentVerifyListAdapter(getListView().getContext(), mStatus);
                         setListAdapter(adapter);
