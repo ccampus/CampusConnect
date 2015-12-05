@@ -87,6 +87,10 @@
             android:name="com.example.sid.campusconnect.ReportedQuestion"
             android:label="@string/title_activity_reported_question" >
         </activity>
+        <activity
+            android:name="com.example.sid.campusconnect.EditQuestion"
+            android:label="@string/title_activity_edit_qs" >
+        </activity>
     </application>
 
 </manifest>

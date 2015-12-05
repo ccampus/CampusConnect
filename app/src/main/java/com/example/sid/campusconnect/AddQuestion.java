@@ -164,7 +164,7 @@ public class AddQuestion extends AppCompatActivity {
                                                 alertbox.setTitle("Add More Questions");
                                                 alertbox.show();
                                             }
-                                        }, 5000);
+                                        }, 1500);
 
                                     } else {
                                         Log.d("Error is : ", e.getMessage());

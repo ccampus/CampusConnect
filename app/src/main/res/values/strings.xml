@@ -107,4 +107,5 @@
     <string name="title_activity_question_detail">Question Details</string>
     <string name="title_activity_view_upvotes">View Upvotes</string>
     <string name="title_activity_reported_question">Reported Questions</string>
+    <string name="title_activity_edit_qs">Edit Question</string>
 </resources>

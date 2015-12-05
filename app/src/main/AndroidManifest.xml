@@ -81,6 +81,10 @@
             android:name=".ReportedQuestion"
             android:label="@string/title_activity_reported_question" >
         </activity>
+        <activity
+            android:name=".EditQuestion"
+            android:label="@string/title_activity_edit_qs" >
+        </activity>
     </application>
 
 </manifest>

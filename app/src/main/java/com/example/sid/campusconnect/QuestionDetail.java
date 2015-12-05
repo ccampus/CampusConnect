@@ -2,12 +2,9 @@ package com.example.sid.campusconnect;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -46,6 +43,7 @@ public class QuestionDetail extends AppCompatActivity
     protected Button discuss;
     protected Button askstaff;
     protected Button reportqs;
+    protected Button editqs;
     protected TextView viewup;
     String quest;
     String s;
@@ -79,6 +77,7 @@ public class QuestionDetail extends AppCompatActivity
         discuss=(Button)findViewById(R.id.discuss);
         askstaff=(Button)findViewById(R.id.askstaff);
         reportqs=(Button)findViewById(R.id.reportqs);
+        editqs=(Button)findViewById(R.id.editqs);
 
         final SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
 
@@ -94,7 +93,7 @@ public class QuestionDetail extends AppCompatActivity
         qsloader.show();
 
         //getting question details
-        ParseUser current_user = ParseUser.getCurrentUser();
+        final ParseUser current_user = ParseUser.getCurrentUser();
 
         if (current_user != null)
         {
@@ -106,6 +105,7 @@ public class QuestionDetail extends AppCompatActivity
             else
             {
                 usertyp = false;
+                editqs.setVisibility(View.GONE);
             }
 
             final ParseQuery<ParseObject> query = ParseQuery.getQuery("Question");
@@ -181,7 +181,10 @@ public class QuestionDetail extends AppCompatActivity
                                         downvotehandler.setClickable(false);
                                         reportqs.setText("Owner");
                                         reportqs.setClickable(false);
+                                        editqs.setVisibility(View.VISIBLE);
+                                        editqs.setClickable(true);
                                     }
+
                                     else
                                     {
                                     }
@@ -732,6 +735,18 @@ public class QuestionDetail extends AppCompatActivity
                                     }
                                 });
 
+                            }
+                        });
+
+                        //edit question
+                        editqs.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v)
+                            {
+                                String questi_id = question_id;
+                                Intent intent = new Intent(QuestionDetail.this,EditQuestion.class);
+                                intent.putExtra("question_id",questi_id);
+                                startActivity(intent);
                             }
                         });
 

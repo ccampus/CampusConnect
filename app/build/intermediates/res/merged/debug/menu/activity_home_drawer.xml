@@ -31,9 +31,9 @@
                 android:icon="@drawable/ic_account_box_black_24dp"
                 android:title="Add Question" />
             <item
-                android:id="@+id/nav_Editqs"
+                android:id="@+id/nav_Discussqs"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Edit Question" />
+                android:title="Discussion Rooms" />
             <item
                 android:id="@+id/nav_Reportqs"
                 android:icon="@drawable/ic_menu_send"

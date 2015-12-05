@@ -295,4 +295,15 @@
         android:layout_alignLeft="@+id/textView27"
         android:layout_alignStart="@+id/textView27" />
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Qs"
+        android:id="@+id/editqs"
+        android:clickable="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2" />
+
 </RelativeLayout>
