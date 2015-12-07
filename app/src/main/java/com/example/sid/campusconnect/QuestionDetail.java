@@ -753,11 +753,15 @@ public class QuestionDetail extends AppCompatActivity
                         // discuss question
                         discuss.setOnClickListener(new View.OnClickListener() {
                             @Override
-                            public void onClick(View v) {
+                            public void onClick(View v)
+                            {
+                                String questi_id = question_id;
+                                Intent intent = new Intent(QuestionDetail.this,CreateDiscussion.class);
+                                intent.putExtra("question_id",questi_id);
+                                startActivity(intent);
 
                             }
                         });
-
                     }
 
                 public void UserProfileHandler(View v) {

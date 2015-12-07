@@ -91,6 +91,14 @@
             android:name="com.example.sid.campusconnect.EditQuestion"
             android:label="@string/title_activity_edit_qs" >
         </activity>
+        <activity
+            android:name="com.example.sid.campusconnect.CreateDiscussion"
+            android:label="@string/title_activity_create_discussion" >
+        </activity>
+        <activity
+            android:name="com.example.sid.campusconnect.AddDiscussionMember"
+            android:label="@string/title_activity_add_discussion_member" >
+        </activity>
     </application>
 
 </manifest>

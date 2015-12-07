@@ -36,6 +36,7 @@ public class ReportedQuestion extends ListActivity {
 
     protected List<ParseObject> mStatus;
     RelativeLayout container;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

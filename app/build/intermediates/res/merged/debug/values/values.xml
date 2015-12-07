@@ -436,7 +436,9 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <!-- From: file:/D:/CampusConnect/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="title_activity_add_discussion_member">Add Discussion Members</string>
     <string name="title_activity_add_question">Add Question</string>
+    <string name="title_activity_create_discussion">Start a Discussion</string>
     <string name="title_activity_edit_qs">Edit Question</string>
     <string name="title_activity_email_reverify">EmailReverify</string>
     <string name="title_activity_forgot_password">Forgot Password</string>

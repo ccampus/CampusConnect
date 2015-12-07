@@ -108,4 +108,6 @@
     <string name="title_activity_view_upvotes">View Upvotes</string>
     <string name="title_activity_reported_question">Reported Questions</string>
     <string name="title_activity_edit_qs">Edit Question</string>
+    <string name="title_activity_create_discussion">Start a Discussion</string>
+    <string name="title_activity_add_discussion_member">Add Discussion Members</string>
 </resources>

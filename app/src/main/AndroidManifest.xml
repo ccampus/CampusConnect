@@ -85,6 +85,14 @@
             android:name=".EditQuestion"
             android:label="@string/title_activity_edit_qs" >
         </activity>
+        <activity
+            android:name=".CreateDiscussion"
+            android:label="@string/title_activity_create_discussion" >
+        </activity>
+        <activity
+            android:name=".AddDiscussionMember"
+            android:label="@string/title_activity_add_discussion_member" >
+        </activity>
     </application>
 
 </manifest>
