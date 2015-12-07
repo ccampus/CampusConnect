@@ -87,27 +87,44 @@ public class CreateDiscussion extends AppCompatActivity {
                 sendqs.setMessage("Setting up a Discussion..!");
                 sendqs.show();
 
-                final ParseObject newdis = new ParseObject("Discuss_Room");
-                newdis.put("Subject",title);
-                newdis.put("Status", true);
-                newdis.put("Opened_By",current_user);
-                newdis.saveInBackground(new SaveCallback() {
-                    @Override
-                    public void done(ParseException e) {
-                        if(e==null)
-                        {
-                            String id = newdis.getObjectId();
-                            sendqs.dismiss();
-                            Intent intent = new Intent(CreateDiscussion.this,AddDiscussionMember.class);
-                            intent.putExtra("discussion_id",id);
-                            startActivity(intent);
-                        }
-                        else
-                        {
-                            Log.d("Error is : ",e.getMessage());
+                ParseQuery<ParseObject> query = ParseQuery.getQuery("Question");
+                query.getInBackground(question_id, new GetCallback<ParseObject>() {
+                    public void done(ParseObject question, ParseException e) {
+                        if (e == null) {
+                            question.put("Is_Discuss", true);
+                            question.saveInBackground(new SaveCallback() {
+                                @Override
+                                public void done(ParseException e) {
+                                    if (e == null) {
+                                        final ParseObject newdis = new ParseObject("Discuss_Room");
+                                        newdis.put("Subject", title);
+                                        newdis.put("Status", true);
+                                        newdis.put("Opened_By", current_user);
+                                        newdis.saveInBackground(new SaveCallback() {
+                                            @Override
+                                            public void done(ParseException e) {
+                                                if (e == null) {
+                                                    String id = newdis.getObjectId();
+                                                    sendqs.dismiss();
+                                                    Intent intent = new Intent(CreateDiscussion.this, AddDiscussionMember.class);
+                                                    intent.putExtra("discussion_id", id);
+                                                    startActivity(intent);
+                                                } else {
+                                                    Log.d("Error is : ", e.getMessage());
+                                                }
+                                            }
+                                        });
+                                    } else {
+                                        Log.d("Error is : ", e.getMessage());
+                                    }
+                                }
+                            });
+                        } else {
+                            Log.d("Error is : ", e.getMessage());
                         }
                     }
                 });
+
             }
         });
     }

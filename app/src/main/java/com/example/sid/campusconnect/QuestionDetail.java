@@ -166,14 +166,10 @@ public class QuestionDetail extends AppCompatActivity
                         ParseQuery<ParseObject> sup = ParseQuery.getQuery("Question");
                         sup.whereEqualTo("User_id", c);
                         sup.whereEqualTo("objectId",q);
-                        sup.findInBackground(new FindCallback<ParseObject>()
-                        {
-                            public void done(List<ParseObject> reList, ParseException e)
-                            {
-                                if (e == null)
-                                {
-                                    if(reList.size()!=0)
-                                    {
+                        sup.findInBackground(new FindCallback<ParseObject>() {
+                            public void done(List<ParseObject> reList, ParseException e) {
+                                if (e == null) {
+                                    if (reList.size() != 0) {
                                         // implement already reported qs
                                         upvotehandler.setText("Owner");
                                         upvotehandler.setClickable(false);
@@ -183,14 +179,9 @@ public class QuestionDetail extends AppCompatActivity
                                         reportqs.setClickable(false);
                                         editqs.setVisibility(View.VISIBLE);
                                         editqs.setClickable(true);
+                                    } else {
                                     }
-
-                                    else
-                                    {
-                                    }
-                                }
-                                else
-                                {
+                                } else {
                                     Log.d("score", "Error: " + e.getMessage());
                                 }
                             }
@@ -199,6 +190,39 @@ public class QuestionDetail extends AppCompatActivity
                                         String qstitle = question.getString("Title");
                                         title.setText(qstitle);
 
+                        ParseQuery<ParseObject> discheck = ParseQuery.getQuery("Discuss_Room");
+                        discheck.whereEqualTo("Subject", qstitle);
+                        discheck.whereEqualTo("Status", true);
+                        discheck.findInBackground(new FindCallback<ParseObject>() {
+                            public void done(List<ParseObject> disList, ParseException e) {
+                                if (e == null)
+                                {
+                                    int length = disList.size();
+                                    if(length==0)
+                                    {
+                                        //do nothing
+                                    }
+                                    else
+                                    {
+                                        discuss.setClickable(false);
+                                    }
+                                }
+                                else
+                                {
+                                    Log.d("score", "Error: " + e.getMessage());
+                                }
+                            }
+                        });
+                                        // another check
+                                        Boolean isdiscuss = question.getBoolean("Is_Discuss");
+                                        if(isdiscuss)
+                                        {
+                                        discuss.setClickable(false);
+                                        }
+                                        else
+                                        {
+                                            //do nothing
+                                        }
                                         //description
                                         String qsdes = question.getString("Description");
                                         des.setText(qsdes);
