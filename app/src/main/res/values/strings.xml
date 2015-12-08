@@ -110,4 +110,6 @@
     <string name="title_activity_edit_qs">Edit Question</string>
     <string name="title_activity_create_discussion">Start a Discussion</string>
     <string name="title_activity_add_discussion_member">Add Discussion Members</string>
+    <string name="title_activity_view_discussion_room">Discussion Rooms</string>
+    <string name="title_activity_discussion_detail">Discussion Details</string>
 </resources>

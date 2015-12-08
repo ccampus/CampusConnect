@@ -25,6 +25,7 @@ import com.parse.GetCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
 import java.util.ArrayList;
@@ -88,6 +89,7 @@ public class AddDiscussionMember extends ListActivity {
                             public void done(ParseObject usersid, ParseException e) {
                                 if (e == null)
                                 {
+                                    // adding all the selected dis members
                                     ParseObject dismem = new ParseObject("Dis_Member");
                                     dismem.put("User_Id",usersid);
                                     dismem.put("Dis_Id",dis);
@@ -96,7 +98,7 @@ public class AddDiscussionMember extends ListActivity {
                                         public void done(ParseException e) {
                                             if (e == null)
                                             {
-                                                sendqs.dismiss();
+                                                //success
                                             }
                                             else
                                             {
@@ -112,6 +114,25 @@ public class AddDiscussionMember extends ListActivity {
                             }
                         });
                     }
+
+                    //add the current user to discussion room
+                    ParseUser current_user = ParseUser.getCurrentUser();
+                    ParseObject dismem = new ParseObject("Dis_Member");
+                    dismem.put("User_Id",current_user);
+                    dismem.put("Dis_Id",dis);
+                    dismem.saveInBackground(new SaveCallback() {
+                        @Override
+                        public void done(ParseException e) {
+                            if (e == null)
+                            {
+                                sendqs.dismiss();
+                            }
+                            else
+                            {
+                                Log.d("Error is : ", e.getMessage());
+                            }
+                        }
+                    });
 
                     Toast toast = Toast.makeText(getApplicationContext(),"Members Added Successfully!",Toast.LENGTH_LONG);
                     toast.show();
@@ -136,7 +157,10 @@ public class AddDiscussionMember extends ListActivity {
         sendqs.setMessage("Retrieving a list of users..!");
         sendqs.show();
 
+        ParseUser current_user = ParseUser.getCurrentUser();
+        String userid= current_user.getObjectId();
         ParseQuery<ParseObject> query = ParseQuery.getQuery("_User");
+        query.whereNotEqualTo("objectId", userid);
         query.findInBackground(new FindCallback<ParseObject>() {
             public void done(List<ParseObject> userList, ParseException e) {
                 if (e == null) {
@@ -165,8 +189,6 @@ public class AddDiscussionMember extends ListActivity {
             String user_identify = ids.getText().toString();
             selectedstrings.add(user_identify);
 
-            //Toast toasts = Toast.makeText(getApplicationContext(),user_identify, Toast.LENGTH_LONG);
-            //toasts.show();
         }
         else
         {

@@ -93,6 +93,14 @@
             android:name=".AddDiscussionMember"
             android:label="@string/title_activity_add_discussion_member" >
         </activity>
+        <activity
+            android:name=".ViewDiscussionRoom"
+            android:label="@string/title_activity_view_discussion_room" >
+        </activity>
+        <activity
+            android:name=".DiscussionDetail"
+            android:label="@string/title_activity_discussion_detail" >
+        </activity>
     </application>
 
 </manifest>

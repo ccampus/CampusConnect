@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:2:1-98:12
+ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:2:1-106:12
 	package
 		ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:3:5-44
 		INJECTED from D:\CampusConnect\app\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:6:5-79
 	android:name
 		ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:8:5-96:19
+ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:8:5-104:19
 MERGED from [com.android.support:appcompat-v7:22.2.1] D:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.1] D:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:22.2.1] D:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\AndroidManifest.xml:22:5-20
@@ -183,6 +183,18 @@ ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:92:9-95:20
 		ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:94:13-73
 	android:name
 		ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:93:13-48
+activity#com.example.sid.campusconnect.ViewDiscussionRoom
+ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:96:9-99:20
+	android:label
+		ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:98:13-72
+	android:name
+		ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:97:13-47
+activity#com.example.sid.campusconnect.DiscussionDetail
+ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:100:9-103:20
+	android:label
+		ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:102:13-69
+	android:name
+		ADDED from D:\CampusConnect\app\src\main\AndroidManifest.xml:101:13-45
 uses-sdk
 INJECTED from D:\CampusConnect\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.1] D:\CampusConnect\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:20:5-43

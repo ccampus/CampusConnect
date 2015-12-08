@@ -163,6 +163,10 @@ public class Home extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
 
         }
+        else if(id==R.id.nav_Discussqs)
+        {
+            startActivity(new Intent(Home.this,ViewDiscussionRoom.class));
+        }
         else if (id==R.id.nav_Viewqs)
         {
             startActivity(new Intent(Home.this,ViewQuestion.class));

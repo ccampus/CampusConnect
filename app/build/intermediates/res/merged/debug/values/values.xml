@@ -439,6 +439,7 @@
     <string name="title_activity_add_discussion_member">Add Discussion Members</string>
     <string name="title_activity_add_question">Add Question</string>
     <string name="title_activity_create_discussion">Start a Discussion</string>
+    <string name="title_activity_discussion_detail">Discussion Details</string>
     <string name="title_activity_edit_qs">Edit Question</string>
     <string name="title_activity_email_reverify">EmailReverify</string>
     <string name="title_activity_forgot_password">Forgot Password</string>
@@ -454,6 +455,7 @@
     <string name="title_activity_student_verify">Student Verification</string>
     <string name="title_activity_universal">Universal</string>
     <string name="title_activity_user_profile">User Profile</string>
+    <string name="title_activity_view_discussion_room">Discussion Rooms</string>
     <string name="title_activity_view_question">Questions</string>
     <string name="title_activity_view_upvotes">View Upvotes</string>
     <string name="title_developers">Developers, \n Campus Connect Team</string>
